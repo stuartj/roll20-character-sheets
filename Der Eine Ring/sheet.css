@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "dum1";
+    src: url("https://github.com/stuartj/roll20-character-sheets/raw/master/The%20One%20Ring/assets/fonts/dum1.ttf");
+}
+
+* {
+    font-family: dum1, "Dumbledor 1", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
 .charsheet {
     background: white;
     text-align: center;
@@ -41,8 +51,6 @@
 }
 
 label {
-    font-weight: bold;
-    font-size: 12px;
     margin-bottom: 0;
     display: inline !important;
     line-height: 26px;
@@ -55,7 +63,6 @@ label {
 }
 
 h2 {
-    font-size: 12px;
     /*font-family: 'Copperplate';*/
     text-align: center;
     letter-spacing: 2px;
