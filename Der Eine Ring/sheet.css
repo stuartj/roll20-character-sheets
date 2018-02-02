@@ -17,18 +17,27 @@
     text-align: left;
 }
 
+.sheet-pc-wrapper {
+    margin-left:-175px;
+    margin-right:-175px;
+}
+
 .sheet-npc,
 .sheet-adversary {
     min-width: 500px;
 }
 
 .sheet-pc {
-    min-width: 840px;
+    min-width: 500px;
+    background:url('https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/The%20One%20Ring/assets/images/parchment.jpg');
+    border:250px solid transparent;
+    border-image:url('https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/The%20One%20Ring/assets/images/character_sheet_frame.png') 457 repeat;
 }
 
 .sheet-logo {
     text-align: center;
     margin-bottom: 30px;
+    margin-top: -175px;
 }
 
 label {
@@ -47,6 +56,7 @@ label {
 
 h2 {
     font-size: 12px;
+    /*font-family: 'Copperplate';*/
     text-align: center;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -59,14 +69,14 @@ button[type=roll] {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    opacity: .5;
+    opacity: 1;
     padding: 0;
     margin: 0 5px;
     outline: none;
 }
 
 button[type=roll]:hover {
-    opacity: 1;
+    opacity: .5;
 }
 
 /* change D20 to system-appropriate D12 */
@@ -125,7 +135,20 @@ border-bottom: 1px solid #333;
     width: 24%;
 }
 
+.sheet-3colrow {
+}
+
+.sheet-2colrow {
+}
+
+.sheet-1colrow {
+}
+
 table.sheet-wide {
+    width: 100%;
+}
+
+table.sheet-wide-PC {
     width: 100%;
 }
 
@@ -157,7 +180,7 @@ textarea {
 }
 
 .sheet-attribute input {
-    border: 2px solid #ddd;
+    border: 2px solid #000;
     width: 60px !important;
     height: 60px !important;
     border-radius: 100%;
@@ -174,14 +197,14 @@ textarea {
 }
 
 .sheet-attribute-favoured input {
-    border: 2px solid #ddd;
+    border: 2px solid #000;
     width: 40px !important;
     height: 40px !important;
     border-radius: 100%;
     float: none !important;
     margin-top: -30px;
     margin-left: -10px;
-    background: white !important;
+    background:url('https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/The%20One%20Ring/assets/images/parchment.jpg') !important;
     text-align: center;
     font-size: 18px;
 }
@@ -356,10 +379,10 @@ textarea {
 }
 
 
-
 /*
     Dots
  */
+
 
 td.sheet-attr-skill-wrapper,
 td.sheet-attr-skill-group {
@@ -373,51 +396,38 @@ td.sheet-attr-skill-group {
     right: 0;
 }
 
-.sheet-dots input[type="radio"] {
-    position: absolute;
-    opacity: 0;
-    z-index: 1;
-}
-
-.sheet-dots input[type="radio"],
-.sheet-dots input[type="radio"] + span {
-    width: 10px;
-    height: 10px;
-    margin: 4px -1px;
-}
-
 .sheet-dots input[type="radio"] + span {
     display: inline-block;
     vertical-align: top;
     position: relative;
 }
 
-/* fake circles */
+.sheet-dots input[type='radio'] {
+    opacity:0;
+    position:absolute;
+    z-index: 1;
+    cursor:pointer;
+}
+
+.sheet-dots input[type='radio'] + span {
+    height: 8px;
+    width: 8px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+    vertical-align:middle;
+    margin-bottom: 2px;
+}
+
 .sheet-dots input[type="radio"]:not([value="0"]) + span {
-    border-radius: 50%;
-    background-color: rgba(0,0,0,.1);
+    background: url("https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/The%20One%20Ring/assets/images/square-filled.png") no-repeat;
+    background-size:100%;
 }
 
-/* fake dots */
-.sheet-dots input[type="radio"]:not([value="0"]) + span::before {
-    content: " ";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 4px;
-    width: 4px;
-    margin-left: -2px;
-    margin-top: -2px;
-    background: black;
-    border-radius: 50%;
+.sheet-dots input[type='radio']:checked ~ input[type='radio'] + span {
+    background: url("https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/The%20One%20Ring/assets/images/square-empty.png") no-repeat;
+    background-size:100%;
 }
 
-/* hide fake dots after last checked radio button */
-.sheet-dots input[type="radio"]:checked ~ input[type="radio"] + span::before {
-    background: transparent;
-}
-
-/* X — Sets value to 0 */
 .sheet-dots input[type="radio"][value="0"] + span:before {
     content: "x";
     font-size: 11px;
@@ -429,6 +439,22 @@ td.sheet-attr-skill-group {
 
 .sheet-dots:hover input[type="radio"][value="0"] + span:before {
     opacity: 1;
+}
+
+.sheet-attr-skill-group .sheet-dots input[type='radio'] + span {
+    height: 12px;
+    width: 12px;
+    top: -2px;
+}
+
+.sheet-attr-skill-group .sheet-dots input[type="radio"]:not([value="0"]) + span {
+    background: url("https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/The%20One%20Ring/assets/images/diamond-filled.png") no-repeat;
+    background-size:100%;
+}
+
+.sheet-attr-skill-group .sheet-dots input[type='radio']:checked ~ input[type='radio'] + span {
+    background: url("https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/The%20One%20Ring/assets/images/diamond-empty.png") no-repeat;
+    background-size:100%;
 }
 
 .sheet-hover-info {
