@@ -1,11 +1,13 @@
 @font-face {
     font-family: "dum1";
+e {
+    font-family: "dum1";
     src: url("https://github.com/stuartj/roll20-character-sheets/raw/master/The%20One%20Ring/assets/fonts/dum1.ttf");
 }
 
 * {
     font-family: dum1, "Dumbledor 1", "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
+    font-weight: normal;
 }
 
 .charsheet {
@@ -64,6 +66,8 @@ label {
 
 h2 {
     /*font-family: 'Copperplate';*/
+    font-size: 16px;
+    font-weight: bold;
     text-align: center;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -399,7 +403,7 @@ td.sheet-attr-skill-group {
 .sheet-dots {
     display: inline-block;
     position: absolute;
-    top: 6px;
+    top: 2px;
     right: 0;
 }
 
@@ -464,6 +468,7 @@ td.sheet-attr-skill-group {
     background-size:100%;
 }
 
+
 .sheet-hover-info {
     position: absolute;
     background: white;
@@ -502,4 +507,37 @@ input:hover + label + .sheet-hover-info {
 
 select {
     width: 110px;
+}
+
+span.sheet-label {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+table.sheet-group-attrs-skills span.sheet-label {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+tr.sheet-attr-group-skills td {
+    vertical-align: bottom;
+}
+
+.sheet-wide-PC td.sheet-small {
+    vertical-align: bottom;
+}
+
+tr.sheet-attr-group-skills td.sheet-attr-skill-wrapper button[type=roll] {
+    margin-right: 0px;
+}
+
+.sheet-pc input[type=text] {
+    font-size: 20px;
+    color: darkred;
+    padding-bottom: 1px;
+    margin-left: 5px;
+}
+
+[name*='attr_weapon_skill_name'] {
+    width: 140px !important;
 }
