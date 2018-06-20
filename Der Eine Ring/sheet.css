@@ -1,7 +1,5 @@
 @font-face {
     font-family: "dum1";
-e {
-    font-family: "dum1";
     src: url("https://github.com/stuartj/roll20-character-sheets/raw/master/The%20One%20Ring/assets/fonts/dum1.ttf");
 }
 
@@ -43,7 +41,7 @@ e {
     min-width: 500px;
     background:url('https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/The%20One%20Ring/assets/images/parchment.jpg');
     border:250px solid transparent;
-    border-image:url('https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/The%20One%20Ring/assets/images/character_sheet_frame.png') 457 repeat;
+	border-image:url('https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/The%20One%20Ring/assets/images/character_sheet_frame.png') 457 repeat;
 }
 
 .sheet-logo {
@@ -509,6 +507,7 @@ select {
     width: 110px;
 }
 
+/* WIP - trying to get larger font */
 span.sheet-label {
     font-weight: normal;
     font-size: 18px;
@@ -538,6 +537,72 @@ tr.sheet-attr-group-skills td.sheet-attr-skill-wrapper button[type=roll] {
     margin-left: 5px;
 }
 
+/* copied from above to keep WIP work together */
 [name*='attr_weapon_skill_name'] {
     width: 140px !important;
 }
+
+/* WIP - trying to move experience/valour etc. */
+
+td#sheet-upper-right-section {
+	padding-left: 45px;
+	vertical-align: top;
+}
+
+.sheet-rating-wrapper {
+	width:90px;
+	height:105px;
+}
+
+.sheet-rating-wrapper span.sheet-label {
+	text-align: center;
+	display: inline-block;
+	font-size: 18px;
+	width: 100%;
+}
+
+.sheet-rating-wrapper img {
+	width:84px;
+	height:84px;
+	position:relative;
+	z-index: 0;
+}
+
+.sheet-rating-wrapper input {
+	width:50px;
+	height:50px;
+	top:-72px;
+	left:13px;
+	position: relative;
+	z-index: 1;
+	font-size:32px;
+	text-align: center;
+	border:none;
+	background-color: transparent;
+	font-family: Helvetica;
+	color:saddlebrown;
+}
+
+.sheet-rating-wrapper .sheet-nw-sub-rating {
+  border-radius: 100%;
+  background: url('https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/The%20One%20Ring/assets/images/parchment.jpg') !important;
+  width: 33px;
+  height: 28px;
+  border: 2px solid black;
+  font-size:16px;
+  position:relative;
+  top:-130px;
+  left:-0px;
+  z-index: 1;
+}
+
+.sheet-rating-wrapper button {
+    position: relative;
+    top: -100px;
+    left: -60px;
+}
+
+table.sheet-wide-PC-container {
+    width: 100%;
+}
+

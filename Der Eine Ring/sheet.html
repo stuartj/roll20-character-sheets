@@ -367,12 +367,9 @@
                                 <td><input name="attr_weapon_damage_1" value="0" class="center number" type="text"></td>
                                 <td><input name="attr_weapon_edge_1" value="0" class="center number" type="text" style="width: 46px;"></td>
                                 <td><input name="attr_weapon_injury_1" value="0" class="center number" type="text"></td>
-                                <td><input name="attr_weapon_called_shot_1" value="" type="text"></td>
-                            </tr>
-
-                            <tr>
-                                <td><button type="roll" value="/me attackiert mit @{weapon_skill_name_2} gegen SG ?{Schwierigkeitsgrad|14}.\n/roll 1t[feat] + @{weapon_rating_2}t[@{weary}] + [[@{weapon_favoured_2} * @{attribute_level}}]] > ?{Schwierigkeitsgrad|14}" name="weapon2check"></button></td>
-                                <td><input type="checkbox" name="attr_weapon_favoured_2" value="1"><input name="attr_weapon_skill_name_2" type="text"></td>
+                                <td><inled_shot_1" value="" type="text"></td>
+                        e="roll" value="/me attackiert mit @{weapon_skill_name_2} gegen2}t[@{weary}] + [[@{weapon_favoured_2} * @{attribute_level}}]] on></td>
+                                <td><input type="checkll_name_2" type="text"></td>
                                 <td><input name="attr_weapon_rating_2" value="0" class="center number" type="text"></td>
                                 <td><input name="attr_weapon_damage_2" value="0" class="center number" type="text"></td>
                                 <td><input name="attr_weapon_edge_2" value="0" class="center number" type="text" style="width: 46px;"></td>
@@ -423,128 +420,133 @@
             <img src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Der%20Eine%20Ring/logo.gif" style="width: 300px;">
         </div>
 
-        <table class="sheet-wide-PC">
+        <table class="sheet-wide-PC-container">
             <tr>
-                <td class="sheet-small"><span class='label'>Name</span></td>
-                <td style="padding-right: 10px;"><input type="text" name="attr_name" style="width: 100%;"></td>
+                <td>
+                    <table class="sheet-wide-PC">
+                        <tr>
+                            <td class="sheet-small"><span class='label'>Name</span></td>
+                            <td style="padding-right: 10px;"><input type="text" name="attr_name" style="width: 100%;"></td>
 
-                <td class="sheet-small"><span class='label'>Kultur</span></td>
-                <td><input type="text" name="attr_culture" style="width: 100%;"></td>
-            </tr>
+                            <td class="sheet-small"><span class='label'>Kultur</span></td>
+                            <td><input type="text" name="attr_culture" style="width: 100%;"></td>
+                        </tr>
 
-            <tr>
-                <td class="sheet-small"><span class='label'>Lebensstandard</span></td>
-                <td style="padding-right: 10px;"><input type="text" name="attr_standard_of_living" style="width: 100%;"></td>
+                        <tr>
+                            <td class="sheet-small"><span class='label'>Lebensstandard</span></td>
+                            <td style="padding-right: 10px;"><input type="text" name="attr_standard_of_living" style="width: 100%;"></td>
 
-                <td class="sheet-small"><span class='label'>Kulturelle Gabe</span></td>
-                <td><input type="text" name="attr_cultural_blessing" style="width: 100%;"></td>
-            </tr>
+                            <td class="sheet-small"><span class='label'>Kulturelle Gabe</span></td>
+                            <td><input type="text" name="attr_cultural_blessing" style="width: 100%;"></td>
+                        </tr>
 
-            <tr>
-                <td class="sheet-small"><span class='label'>Berufung</span></td>
-                <td style="padding-right: 10px;"><input type="text" name="attr_calling" style="width: 100%;"></td>
+                        <tr>
+                            <td class="sheet-small"><span class='label'>Berufung</span></td>
+                            <td style="padding-right: 10px;"><input type="text" name="attr_calling" style="width: 100%;"></td>
 
-                <td class="sheet-small"><span class='label'>Dunkle Schwäche</span></td>
-                <td><input type="text" name="attr_shadow_weakness" style="width: 100%;"></td>
-            </tr>
+                            <td class="sheet-small"><span class='label'>Dunkle Schwäche</span></td>
+                            <td><input type="text" name="attr_shadow_weakness" style="width: 100%;"></td>
+                        </tr>
 
-            <tr>
-                <td class="sheet-small"><span class='label'>Spezialisierung</span></td>
-                <td style="padding-right: 10px;"><input type="text" name="attr_specialities" style="width: 100%;"></td>
+                        <tr>
+                            <td class="sheet-small"><span class='label'>Spezialisierung</span></td>
+                            <td style="padding-right: 10px;"><input type="text" name="attr_specialities" style="width: 100%;"></td>
 
-                <td class="sheet-small"><span class='label'>Charaktermerkmal</span></td>
-                <td><input type="text" name="attr_distinctive_features" style="width: 100%;"></td>
+                            <td class="sheet-small"><span class='label'>Charaktermerkmal</span></td>
+                            <td><input type="text" name="attr_distinctive_features" style="width: 100%;"></td>
+                        </tr>
+                    </table>
+                    <h2>Attribute</h2>
+                    <table class="sheet-group-attrs-skills">
+                        <tr>
+                            <td>
+
+                                <table>
+                                    <tr class="sheet-attribute">
+                                        <td>
+                                            <span class="label">Körper</span>
+                                            <div class="sheet-hover-info">A character with a high Body score can be tough and fit, or tall and agile, or even attractive or imposing. Every aspect of a character that relies on vigour or physical well-being is represented in the game by Body.">Body</div>
+                                        </td>
+                                        <td><input name="attr_body" type="text" value="0"></td>
+                                    </tr>
+
+                                    <tr class="sheet-attribute-favoured">
+                                        <td><span class="label">bevorzugt</span></td>
+                                        <td><input name="attr_body_max" type="text" value="0"></td>
+                                    </tr>
+                                </table>
+
+                            </td>
+
+                            <td>
+
+                                <table>
+                                    <tr class="sheet-attribute">
+                                        <td>
+                                            <span class="label">Seele</span>
+                                            <div class="sheet-hover-info">Measures a character’s capacity for emotion, energy and enthusiasm. A hero with a high Heart score can be fiery, intense, and hard to demoralise. Activities that benefit from a passionate or energetic temper may be influenced by a character’s Heart score.">Heart</div>
+                                        </td>
+                                        <td>
+                                            <input name="attr_heart" type="text" value="0"></td>
+                                    </tr>
+
+                                    <tr class="sheet-attribute-favoured">
+                                        <td><span class="label">bevorzugt</span></td>
+                                        <td><input name="attr_heart_max" type="text" value="0"></td>
+                                    </tr>
+                                </table>
+
+                            </td>
+
+                            <td>
+
+                                <table>
+                                    <tr class="sheet-attribute">
+                                        <td>
+                                            <span class="label">Verstand</span>
+                                            <div class="sheet-hover-info">A hero with a high Wits rating can be clever, attentive and strong-willed. A sharp-witted person is a quick thinker, and probably alert and vigilant, so any action that calls upon these qualities benefits from a hero’s Wits score.">Wits</div>
+                                        </td>
+                                        <td>
+                                            <input name="attr_wits" type="text" value="0"></td>
+                                    </tr>
+
+                                    <tr class="sheet-attribute-favoured">
+                                        <td><span class="label">bevorzugt</span></td>
+                                        <td><input name="attr_wits_max" type="text" value="0"></td>
+                                    </tr>
+                                </table>
+
+                            </td>
+
+
+                        </tr>
+                    </table>
+                </td>
+                <td id='upper-right-section'>
+                        <!-- WIP integration from Glorelendil prototype -->
+                        <div class="rating-wrapper" id="xp-wrapper">
+            				<span class="label">Erfahrung</span>
+            				<img class="rating-diamond" src="https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/The%20One%20Ring/assets/images/rating-diamond.png">
+            				<input id="xp-input" name="attr_unused_experience_points" value="0" type="text">
+            				<input id="xp-spent" name="attr_used_experience_points" value="0" class="nw-sub-rating" type="text">
+            			</div>
+            			<div class="rating-wrapper" id="valour-wrapper">
+            			<span class="label">Heldenmut</span>
+                            <img class="rating-diamond" src="https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/The%20One%20Ring/assets/images/rating-diamond.png">
+            				<input id="valour-input" name="attr_valour" value="0" type="text">
+                            <button type="roll" value="/me würfelt auf Heldenmut gegen SG ?{Schwierigkeitsgrad|14}.\n/roll 1t[feat] + @{valour}t[@{weary}] > ?{Schwierigkeitsgrad|14}" name="valourcheck"></button>
+            			</div>
+                        <div class="rating-wrapper" id="wisdom-wrapper">
+            				<span class="label">Weisheit</span>
+            				<img class="rating-diamond" src="https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/The%20One%20Ring/assets/images/rating-diamond.png">
+            				<input id="wisdom-input" name="attr_wisdom" value="0" type="text">
+                            <button type="roll" value="/me würfelt auf Weisheit gegen SG ?{Schwierigkeitsgrad|14}.\n/roll 1t[feat] + @{wisdom}t[@{weary}] > ?{Schwierigkeitsgrad|14}." name="wisdomcheck"></button>
+            			</div>
+                 </td>
             </tr>
         </table>
 
-        <h2>Attribute</h2>
-
         <table class="sheet-group-attrs-skills">
-            <tr>
-                <td>
-
-                    <table>
-                        <tr class="sheet-attribute">
-                            <td>
-                                <span class="label">Körper</span>
-                                <div class="sheet-hover-info">A character with a high Body score can be tough and fit, or tall and agile, or even attractive or imposing. Every aspect of a character that relies on vigour or physical well-being is represented in the game by Body.">Body</div>
-                            </td>
-                            <td><input name="attr_body" type="text" value="0"></td>
-                        </tr>
-
-                        <tr class="sheet-attribute-favoured">
-                            <td><span class="label">bevorzugt</span></td>
-                            <td><input name="attr_body_max" type="text" value="0"></td>
-                        </tr>
-                    </table>
-
-                </td>
-
-                <td>
-
-                    <table>
-                        <tr class="sheet-attribute">
-                            <td>
-                                <span class="label">Seele</span>
-                                <div class="sheet-hover-info">Measures a character’s capacity for emotion, energy and enthusiasm. A hero with a high Heart score can be fiery, intense, and hard to demoralise. Activities that benefit from a passionate or energetic temper may be influenced by a character’s Heart score.">Heart</div>
-                            </td>
-                            <td>
-                                <input name="attr_heart" type="text" value="0"></td>
-                        </tr>
-
-                        <tr class="sheet-attribute-favoured">
-                            <td><span class="label">bevorzugt</span></td>
-                            <td><input name="attr_heart_max" type="text" value="0"></td>
-                        </tr>
-                    </table>
-
-                </td>
-
-                <td>
-
-                    <table>
-                        <tr class="sheet-attribute">
-                            <td>
-                                <span class="label">Verstand</span>
-                                <div class="sheet-hover-info">A hero with a high Wits rating can be clever, attentive and strong-willed. A sharp-witted person is a quick thinker, and probably alert and vigilant, so any action that calls upon these qualities benefits from a hero’s Wits score.">Wits</div>
-                            </td>
-                            <td>
-                                <input name="attr_wits" type="text" value="0"></td>
-                        </tr>
-
-                        <tr class="sheet-attribute-favoured">
-                            <td><span class="label">bevorzugt</span></td>
-                            <td><input name="attr_wits_max" type="text" value="0"></td>
-                        </tr>
-                    </table>
-
-                </td>
-
-                <td>
-
-                    <table class="wide">
-                        <tr>
-                            <td class="sheet-valour">
-                                <button type="roll" value="/me würfelt auf Heldenmut gegen SG ?{Schwierigkeitsgrad|14}.\n/roll 1t[feat] + @{valour}t[@{weary}] > ?{Schwierigkeitsgrad|14}" name="valourcheck"></button>
-                                <span class="label">Heldenmut</span>
-                                <div class="sheet-hover-info">Valour is a measure of a character’s courage, as tempered by dangerous deeds. A man of valour is willing to place himself in danger for the safety of others. In a time where new threats arise each day, courage is highly prized, and a valiant adventurer is often esteemed above all other individuals. For this reason, a hero’s rank in Valour also reflects the level of renown he attained as a doer of great deeds. When a player decides to favour Valour over Wisdom, his hero’s actions, not his judgement, will tend to prove his status in the eyes of others. From the lowliest start as a wandering adventurer, a hero might one day equal the repute and respect earned by a famous champion or king.</div>
-                                <input type="number" name="attr_valour" value="0">
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td class="sheet-wisdom">
-                                <button type="roll" value="/me würfelt auf Weisheit gegen SG ?{Schwierigkeitsgrad|14}.\n/roll 1t[feat] + @{wisdom}t[@{weary}] > ?{Schwierigkeitsgrad|14}." name="wisdomcheck"></button>
-                                <span class="label">Weisheit</span>
-                                <div class="sheet-hover-info">A character’s knowledge of his own capabilities, his self- confidence and capacity for good judgement changes and improves with struggles and strife. A characteristic with deeply personal implications, a hero’s rank in Wisdom also determines the stature of the hero in the eyes of those that prize these qualities. When Wisdom is chosen over Valour when spending Experience points, it suggests that the hero’s adventures are affecting him subtly but profoundly. Starting as a more or less ingenuous individual with an adventurous spirit, the hero can achieve the maturity and sagacity of the Wise.</div>
-                                <input type="number" name="attr_wisdom" value="0">
-                            </td>
-                        </tr>
-                    </table>
-
-                </td>
-            </tr>
-
             <tr>
                 <td colspan="3">
                     <h2>Allgemeine Fertigkeiten</h2>
@@ -644,34 +646,21 @@
                     <div class="sheet-dots">
                         <input type="radio" name="attr_travel" value="0" checked="checked" /><span></span>
                         <input type="radio" name="attr_travel" value="1" /><span></span>
-                        <input type="radio" name="attr_travel" value="2" /><span></span>
-                        <input type="radio" name="attr_travel" value="3" /><span></span>
-                        <input type="radio" name="attr_travel" value="4" /><span></span>
-                        <input type="radio" name="attr_travel" value="5" /><span></span>
-                        <input type="radio" name="attr_travel" value="6" /><span></span>
-                    </div>
-                </td>
-
-                <td class="attr-skill-wrapper">
-                    <button type="roll" value="/me würfelt auf Heimlichkeit gegen SG ?{Schwierigkeitsgrad|14}.\n/roll 1t[feat] + @{stealth}t[@{weary}] > ?{Schwierigkeitsgrad|14}" name="stealthcheck"></button>
+                        <input type="radio" name="attr_travel" value="2" /><span></spinput type="radio" name="attr_travel" value="3" /><span></span" value="4" /><span></span>
+                        <input typ            <input type="radio" name="attr_travel" value="6" /><td class="attr-skill-wrapper">
+                    <button typrigkeitsgrad|14}.\n/roll 1t[feat] + @{stealth}t[@{weary}] > ?{Schwierigkeitsgrad|14}" name="stealthcheck"></button>
                     <input type="checkbox" name="attr_stealth_favoured" value="1">
                     <span class='label'>Heimlichkeit</span>
                     <div class="sheet-hover-info">A hero resorts to Stealth whenever he needs, or is forced, to act in a furtive or secret way. The skill includes hiding, moving quietly and shadowing others. These activities often rely on quickness and precision, so a stealthy hero combines practiced caution with the ability to judge the right moment to take a chance. Hunters, burglars, and solitary fighters use Stealth to prosper in their trade. A successful Stealth roll indicates that the character has gone unnoticed, while a failure has almost certainly attracts unwanted attention. A great or extraordinary success produces an outcome so flawless that it even be impossible to trace the hero’s actions after the fact.</div>
-                    <div class="sheet-dots">
-                        <input type="radio" name="attr_stealth" value="0" checked="checked" /><span></span>
+                                     <input type="radio" name="attr_stealth" value="0" checked="checked" /><span></span>
                         <input type="radio" name="attr_stealth" value="1" /><span></span>
                         <input type="radio" name="attr_stealth" value="2" /><span></span>
                         <input type="radio" name="attr_stealth" value="3" /><span></span>
-                        <input type="radio" name="attr_stealth" value="4" /><span></span>
-                        <input type="radio" name="attr_stealth" value="5" /><span></span>
-                        <input type="radio" name="attr_stealth" value="6" /><span></span>
+               <input type="radio" name="attr_stealth" value="4" name="attr_stealth" value="5" /><span></span>
+               ue="6" /><span></span>
                     </div>
-                </td>
-
-                <td class="attr-movement attr-skill-group">
-                    <span class='label'>Bewegung</span>
-                    <div class="sheet-hover-info">Overcoming obstacles, enduring long journeys and moving secretly are the stuff adventurers are made of.</div>
-                    <div class="sheet-dots">
+             ill-group">
+                    <span class='label'>Bewegung</srcoming obstacles, enduring long journeys and moving secretly a           <div class="sheet-dots">
                         <input type="radio" name="attr_movement" value="0" checked="checked" /><span></span>
                         <input type="radio" name="attr_movement" value="1" /><span></span>
                         <input type="radio" name="attr_movement" value="2" /><span></span>
@@ -777,49 +766,13 @@
                         <input type="radio" name="attr_healing" value="3" /><span></span>
                         <input type="radio" name="attr_healing" value="4" /><span></span>
                         <input type="radio" name="attr_healing" value="5" /><span></span>
-                        <input type="radio" name="attr_healing" value="6" /><span></span>
-                    </div>
+                        <="checked" /><span></span>
+                        <input type=><span></span>
+                        <input type="radio" nam                      <input type="radio" name="attr_survival"="attr-group-skills attr-group-custom">
 
-                </td>
-
-                <td class="attr-skill-wrapper">
-                    <button type="roll" value="/me würfelt auf Jagen gegen SG ?{Schwierigkeitsgrad|14}.\n/roll 1t[feat] + @{hunting}t[@{weary}] > ?{Schwierigkeitsgrad|14}" name="huntingcheck"></button>
-                    <input type="checkbox" name="attr_hunting_favoured" value="1">
-                    <span class='label'>Jagen</span>
-                    <div class="sheet-hover-info">Knowing how to hunt is a fundamental skill common in much of Middle-earth. A Hunting roll may be required when pursuing a creature through wild areas, or to locate tracks and follow them, or to identify a quarry by its spoor. The skill also covers preparing traps and the training and use of hunting dogs or birds. In wilder areas, hunters learn to apply their trade to more dangerous quarry, such as Orcs, Spiders or Wargs, or else risk becoming the prey.</div>
-                    <div class="sheet-dots">
-                        <input type="radio" name="attr_hunting" value="0" checked="checked" /><span></span>
-                        <input type="radio" name="attr_hunting" value="1" /><span></span>
-                        <input type="radio" name="attr_hunting" value="2" /><span></span>
-                        <input type="radio" name="attr_hunting" value="3" /><span></span>
-                        <input type="radio" name="attr_hunting" value="4" /><span></span>
-                        <input type="radio" name="attr_hunting" value="5" /><span></span>
-                        <input type="radio" name="attr_hunting" value="6" /><span></span>
-                    </div>
-
-                </td>
-
-                <td class="attr-survival attr-skill-group">
-                    <span class='label'>Überleben</span>
-                    <div class="sheet-hover-info">The three skills of this group, essential for a roving adventurer, make a hero an invaluable member of a company.</div>
-                    <div class="sheet-dots">
-                        <input type="radio" name="attr_survival" value="0" checked="checked" /><span></span>
-                        <input type="radio" name="attr_survival" value="1" /><span></span>
-                        <input type="radio" name="attr_survival" value="2" /><span></span>
-                        <input type="radio" name="attr_survival" value="3" /><span></span>
-                    </div>
-
-                </td>
-
-            </tr>
-
-            <tr class="attr-group-skills attr-group-custom">
-
-                <td class="attr-skill-wrapper">
-                    <button type="roll" value="/me würfelt auf Musizieren gegen SG ?{Schwierigkeitsgrad|14}.\n/roll 1t[feat] + @{song}t[@{weary}] > ?{Schwierigkeitsgrad|14}" name="songcheck"></button>
-                    <input type="checkbox" name="attr_song_favoured" value="1">
+                <td cltton type="roll" value="/me würfelt auf Musizieren gegen SG ?{ong}t[@{weary}] > ?{Schwierigkeitsgrad|14}" name="songcheck"></>
                     <span class='label'>Musizieren</span>
-                    <div class="sheet-hover-info">Hobbits and Men, Elves and Dwarves, even Goblins and maybe Orcs: all the creatures of Middle-earth celebrate by playing music and singing songs. Great deeds and grim misfortunes are remembered in verse, and pleasant or even comic stories are told to ease spirits and find comfort. Song is used to recite poems, sing songs or play instruments suitable to the character’s culture. It can also be used to learn new works or create original compositions.</div>
+    and Men, Elves and Dwarves, even Goblins and maybe Orcs: all tddle-earth celebrate by playing music and singing songs. Great deeds and grim misfortunes are remembered in verse, and pleasant or even comic stories are told to ease spirits and find comfort. Song is used to recite poems, sing songs or play instruments suitable to the character’s culture. It can also be used to learn new works or create original compositions.</div>
                     <div class="sheet-dots">
                         <input type="radio" name="attr_song" value="0" checked="checked" /><span></span>
                         <input type="radio" name="attr_song" value="1" /><span></span>
@@ -1126,14 +1079,11 @@
 								<td><input name="attr_mount_size_2" type="text" style="width: 50px;"></td>
 								<td><input name="attr_mount_modifier_2" value="0" class="center number" type="text"></td>
                                 <td><input name="attr_mount_damage_2" value="0" class="center number" type="text"></td>
-                                <td><input name="attr_mount_reduction_2" value="0" class="center number" type="text"></td>
-								<td><input name="attr_mount_qualities_2" type="text" style="width: 240px;"></td>
+                                <td><input nlue="0" class="center number" type="text"></td>
+								<td><inidth: 240px;"></td>
                             </tr>
 
-                        </tbody>
-                    </table>
-
-                </td>
+                       </td>
 
             </tr>
         </table>
@@ -1306,16 +1256,6 @@
                 <td class="sheet-pod">
                     <span class="label">Abenteuerpunkte</span><br>
                     <input type="number" name="attr_advancement_points" value="0">
-                </td>
-
-                <td class="sheet-pod">
-                    <span class="label">Eingesetzte Erfahrung</span><br>
-                    <input type="number" name="attr_used_experience_points" value="0">
-                </td>
-
-                <td class="sheet-pod">
-                    <span class="label">Unverbrauchte Erfahrung</span><br>
-                    <input type="number" name="attr_unused_experience_points" value="0">
                 </td>
 
                 <td class="sheet-pod">
