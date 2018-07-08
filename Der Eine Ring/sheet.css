@@ -196,6 +196,7 @@ textarea {
     text-align: center;
     font-size: 24px;
     background: white;
+    padding-bottom: 10px !important;
 }
 
 .sheet-attribute-favoured label {
@@ -571,7 +572,7 @@ td#sheet-upper-right-section {
 .sheet-rating-wrapper input {
 	width:50px;
 	height:50px;
-	top:-72px;
+	top:-65px;
 	left:13px;
 	position: relative;
 	z-index: 1;
