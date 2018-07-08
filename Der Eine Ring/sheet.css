@@ -244,6 +244,7 @@ textarea {
 .sheet-skill-groups,
 .sheet-attr-group-skills td:last-child {
     padding-left: 60px !important;
+    width: 100px;
 }
 
 [name*="attr_gear_name"] {
