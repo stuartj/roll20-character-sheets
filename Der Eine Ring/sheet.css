@@ -182,10 +182,18 @@ textarea {
     position: relative;
 }
 
-.sheet-attribute label {
+.sheet-attribute-favoured,
+.sheet-attribute td {
+    padding-right: 0px !important;
+}
+
+.sheet-attribute span.sheet-label {
     line-height: 50px;
     text-align: right !important;
     display: block !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    color: #90252A;
 }
 
 .sheet-attribute input {
