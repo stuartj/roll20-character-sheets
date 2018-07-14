@@ -429,12 +429,11 @@ td.sheet-attr-skill-group {
 }
 
 .sheet-dots input[type='radio'] + span {
-    height: 8px;
-    width: 8px;
+    height: 10px;
+    width: 10px;
     display:inline-block;
     padding: 0 0 0 0px;
     vertical-align:middle;
-    margin-bottom: 2px;
 }
 
 .sheet-dots input[type="radio"]:not([value="0"]) + span {
