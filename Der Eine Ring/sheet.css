@@ -482,17 +482,18 @@ td.sheet-attr-skill-group {
     z-index: 10;
     padding: 20px;
     width: 200px;
-    display: none;
+    visibility: hidden;
     opacity: 0;
     box-shadow: 0 3px 15px rgba(0,0,0,.1);
-    transition: display 0s ease-in-out, opacity 1s ease-in-out 2s;
+    transition:visibility 0s linear 0.3s, opacity 0.3s linear;
 }
 
-label:hover + .sheet-hover-info,
-input:hover + label + .sheet-hover-info {
-    display: block;
+span.label:hover + .sheet-hover-info,
+span.sheet-label:hover + .sheet-hover-info,
+input:hover + span.sheet-label + .sheet-hover-info {
+    visibility: visible;
     opacity: 1;
-    transition: display 0s ease-in-out, opacity 1s ease-in-out 2s;
+    transition-delay: 0s;
 }
 
 .sheet-attr-skill-group .sheet-hover-info  {
