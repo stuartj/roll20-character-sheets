@@ -193,7 +193,7 @@ textarea {
     display: block !important;
     font-size: 20px !important;
     font-weight: bold !important;
-    color: #90252A;
+    color: black;
 }
 
 .sheet-attribute input {
@@ -276,6 +276,19 @@ textarea {
     text-decoration: underline
 }
 
+.sheet-lmc-skills tr td:nth-child(2) input {
+    display: inline-block;
+}
+
+.sheet-lmc-skills tr td:nth-child(2) input[type=text] {
+    margin-left: 5px;
+    width: 190px
+}
+
+.sheet-lmc-skills tr td:nth-child(2) input:checked + input {
+    text-decoration: underline
+}
+
 .sheet-combat-values label,
 .sheet-combat-values input {
     display: block;
@@ -322,6 +335,14 @@ textarea {
     width: 30px !important;
 }
 
+.sheet-lmc-skills tbody td {
+    padding: 0 5px;
+}
+
+.sheet-lmc-skills .sheet-number {
+    width: 30px !important;
+}
+
 [name*='attr_weapon_skill_name'] {
     width: 160px !important;
 }
@@ -358,6 +379,10 @@ textarea {
 }
 
 .sheet-weapon-skill-row input[checked] + label {
+    text-decoration: underline
+}
+
+.sheet-lmc-skill-row input[checked] + label {
     text-decoration: underline
 }
 
@@ -541,8 +566,8 @@ tr.sheet-attr-group-skills td.sheet-attr-skill-wrapper button[type=roll] {
 }
 
 .sheet-pc input[type=text] {
-    font-size: 20px;
-    color: darkred;
+    font-size: 16px;
+    color: black;
     padding-bottom: 1px;
     margin-left: 5px;
 }
@@ -581,7 +606,7 @@ td#sheet-upper-right-section {
 .sheet-rating-wrapper input {
 	width:50px;
 	height:50px;
-	top:-65px;
+	top:-68px;
 	left:13px;
 	position: relative;
 	z-index: 1;
@@ -589,8 +614,8 @@ td#sheet-upper-right-section {
 	text-align: center;
 	border:none;
 	background-color: transparent;
-	font-family: Helvetica;
-	color:saddlebrown;
+	font-family: dum1;
+	color:black;
 }
 
 .sheet-rating-wrapper .sheet-nw-sub-rating {
