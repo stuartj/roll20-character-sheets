@@ -260,8 +260,9 @@
                             <input type="number" value="0" name="attr_endurance_max">
                         </td>
                         <td class="sheet-center">
-   "number" value="0" name="attr_hope">&nbsp;/&nbsp;
-                 </td>
+                            <input type="number" value="0" name="attr_hope">&nbsp;/&nbsp;
+                            <input type="number" value="0" name="attr_hope_max">
+                        </td>
                     </tr>
                     <tr>
                         <td class="sheet-center"><label data-i18n="parry-and-shield">Parry &amp; Shield</label></td>
@@ -320,7 +321,7 @@
                         <td><input type="checkbox" name="attr_lmc_favoured_5" value="1"><input name="attr_lmc_skill_name_5" type="text"></td>
                         <td><input name="attr_lmc_rating_5" value="0" class="center number" type="text"></td>
                     </tr>
-
+                    
                     <tr>
                         <td><button type="roll" value="/me @{translation_rolls_for} @{lmc_skill_name_3} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{lmc_rating_3}t[@{weary}] + [[@{lmc_favoured_3} * @{attribute_level}}]] > ?{@{translation_target_number}|14}" name="lmc3check"></button></td>
                         <td><input type="checkbox" name="attr_lmc_favoured_3" value="1"><input name="attr_lmc_skill_name_3" type="text"></td>
@@ -329,8 +330,8 @@
                         <td><button type="roll" value="/me @{translation_rolls_for} @{lmc_skill_name_6} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{lmc_rating_6}t[@{weary}] + [[@{lmc_favoured_6} * @{attribute_level}}]] > ?{@{translation_target_number}|14}" name="lmc6check"></button></td>
                         <td><input type="checkbox" name="attr_lmc_favoured_6" value="1"><input name="attr_lmc_skill_name_6" type="text"></td>
                         <td><input name="attr_lmc_rating_6" value="0" class="center number" type="text"></td>
-                    </tr>
-
+                    </tr>                    
+    
                 </table>
             </td>
         </tr>
@@ -446,27 +447,27 @@
                         <tr>
                             <td class="sheet-small"><span class='label' data-i18n="character-name">Name</span></td>
                             <td style="padding-right: 10px;"><input type="text" name="attr_name" style="width: 100%;"></td>
-
+            
                             <td class="sheet-small"><span class='label' data-i18n="culture">Culture</span></td>
                             <td><input type="text" name="attr_culture" style="width: 100%;"></td>
                         </tr>
-
+            
                         <tr>
                             <td class="sheet-small"><span class='label' data-i18n="standard-of-living">Standard of Living</span></td>
                             <td style="padding-right: 10px;"><input type="text" name="attr_standard_of_living" style="width: 100%;"></td>
-
+            
                             <td class="sheet-small"><span class='label' data-i18n="cultural-blessing">Cultural Blessing</span></td>
                             <td><input type="text" name="attr_cultural_blessing" style="width: 100%;"></td>
                         </tr>
-
+            
                         <tr>
                             <td class="sheet-small"><span class='label' data-i18n="calling">Calling</span></td>
                             <td style="padding-right: 10px;"><input type="text" name="attr_calling" style="width: 100%;"></td>
-
+            
                             <td class="sheet-small"><span class='label' data-i18n="shadow-weakness">Shadow Weakness</span></td>
                             <td><input type="text" name="attr_shadow_weakness" style="width: 100%;"></td>
                         </tr>
-
+            
                         <tr>
                             <td class="sheet-small"><span class='label' data-i18n="specialities">Specialities</span></td>
                             <td colspan="3"><input type="text" name="attr_specialities" style="width: 100%;"></td>
@@ -482,7 +483,7 @@
                     <table class="sheet-group-attrs-skills">
                         <tr>
                             <td>
-
+            
                                 <table>
                                     <tr class="sheet-attribute">
                                         <td>
@@ -491,17 +492,17 @@
                                         </td>
                                         <td><input name="attr_body" type="text" value="0"></td>
                                     </tr>
-
+            
                                     <tr class="sheet-attribute-favoured">
                                         <td><span class="label" data-i18n="favoured">Favoured</span></td>
                                         <td><input name="attr_body_max" type="text" value="0"></td>
                                     </tr>
                                 </table>
-
+            
                             </td>
-
+            
                             <td>
-
+            
                                 <table>
                                     <tr class="sheet-attribute">
                                         <td>
@@ -511,34 +512,35 @@
                                         <td>
                                             <input name="attr_heart" type="text" value="0"></td>
                                     </tr>
-
+            
                                     <tr class="sheet-attribute-favoured">
                                         <td><span class="label" data-i18n="favoured">Favoured</span></td>
                                         <td><input name="attr_heart_max" type="text" value="0"></td>
                                     </tr>
                                 </table>
-
+            
                             </td>
-
+            
                             <td>
-
+            
                                 <table>
                                     <tr class="sheet-attribute">
                                         <td>
                                             <span class="label" data-i18n="wits">Wits</span>
 			                                <div class="sheet-hover-info" data-i18n="wits-description">A hero with a high Wits rating can be clever, attentive and strong-willed. A sharp-witted person is a quick thinker, and probably alert and vigilant, so any action that calls upon these qualities benefits from a hero�s Wits score.</div>
-                                                      <td>
+                                        </td>
+                                        <td>
                                             <input name="attr_wits" type="text" value="0"></td>
                                     </tr>
-
+            
                                     <tr class="sheet-attribute-favoured">
                                         <td><span class="label" data-i18n="favoured">Favoured</span></td>
                                         <td><input name="attr_wits_max" type="text" value="0"></td>
                                     </tr>
                                 </table>
-
+            
                             </td>
-
+            
 
                         </tr>
                     </table>
@@ -678,9 +680,10 @@
                 </td>
 
                 <td class="attr-skill-wrapper">
-                    <button type="roll" value="/me @{translation_rolls_for} @{translation_stealth} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{stealth}t[@{weary}] > ?{@{trme="stealthcheck"></button>
-                    <input type="cha-i18n="stealth">Stealth</span>
-                    <div class=or is forced, to act in a furtive or secret way. The skill includes hiding, moving quietly and shadowing others. These activities often rely on quickness and precision, so a stealthy hero combines practiced caution with the ability to judge the right moment to take a chance. Hunters, burglars, and solitary fighters use Stealth to prosper in their trade. A successful Stealth roll indicates that the character has gone unnoticed, while a failure has almost certainly attracts unwanted attention. A great or extraordinary success produces an outcome so flawless that it even be impossible to trace the hero�s actions after the fact.</div>
+                    <button type="roll" value="/me @{translation_rolls_for} @{translation_stealth} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{stealth}t[@{weary}] > ?{@{translation_target_number}|14}" name="stealthcheck"></button>
+                    <input type="checkbox" name="attr_stealth_favoured" value="1">
+                    <span class='label' data-i18n="stealth">Stealth</span>
+                    <div class="sheet-hover-info" data-i18n="stealth-description">A hero resorts to Stealth whenever he needs, or is forced, to act in a furtive or secret way. The skill includes hiding, moving quietly and shadowing others. These activities often rely on quickness and precision, so a stealthy hero combines practiced caution with the ability to judge the right moment to take a chance. Hunters, burglars, and solitary fighters use Stealth to prosper in their trade. A successful Stealth roll indicates that the character has gone unnoticed, while a failure has almost certainly attracts unwanted attention. A great or extraordinary success produces an outcome so flawless that it even be impossible to trace the hero�s actions after the fact.</div>
                     <div class="sheet-dots">
                         <input type="radio" name="attr_stealth" value="0" checked="checked" /><span></span>
                         <input type="radio" name="attr_stealth" value="1" /><span></span>
@@ -696,8 +699,10 @@
                     <span class='label' data-i18n="movement">Movement</span>
                     <div class="sheet-hover-info" data-i18n="movement-description">Overcoming obstacles, enduring long journeys and moving secretly are the stuff adventurers are made of.</div>
                     <div class="sheet-dots">
-      name="attr_movement" value="0" checked="checked" /><span></spa></span>
-                        <input type="radio" name="attrme="attr_movement" value="3" /><span></span>
+                        <input type="radio" name="attr_movement" value="0" checked="checked" /><span></span>
+                        <input type="radio" name="attr_movement" value="1" /><span></span>
+                        <input type="radio" name="attr_movement" value="2" /><span></span>
+                        <input type="radio" name="attr_movement" value="3" /><span></span>
                     </div>                </td>
 
             </tr>
@@ -842,7 +847,8 @@
                     <input type="checkbox" name="attr_song_favoured" value="1">
                     <span class='label' data-i18n="song">Song</span>
                     <div class="sheet-hover-info" data-i18n="song-description">Hobbits and Men, Elves and Dwarves, even Goblins and maybe Orcs: all the creatures of Middle-earth celebrate by playing music and singing songs. Great deeds and grim misfortunes are remembered in verse, and pleasant or even comic stories are told to ease spirits and find comfort. Song is used to recite poems, sing songs or play instruments suitable to the character�s culture. It can also be used to learn new works or create original compositions.</div>
-                   <input type="radio" name="attr_song" value="0" checked="checked" /><span></span>
+                    <div class="sheet-dots">
+                        <input type="radio" name="attr_song" value="0" checked="checked" /><span></span>
                         <input type="radio" name="attr_song" value="1" /><span></span>
                         <input type="radio" name="attr_song" value="2" /><span></span>
                         <input type="radio" name="attr_song" value="3" /><span></span>
@@ -1036,7 +1042,9 @@
                                 <td><input name="attr_weapon_encumbrance_4" value="0" class="center number" type="text"></td>
                             </tr>
                             <tr>
-       {translation_attacks_with_a} @{weapon_skill_name_5} @{translatirating_5}t[@{weary}] > ?{@{translation_target_number}|14}" name type="checkbox" name="attr_weapon_favoured_5" value="1"><input><input name="attr_weapon_rating_5" value="0" class="center number" type="text"></td>
+                                <td><button type="roll" value="/me @{translation_attacks_with_a} @{weapon_skill_name_5} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{weapon_rating_5}t[@{weary}] > ?{@{translation_target_number}|14}" name="weapon5check"></button></td>
+                                <td><input type="checkbox" name="attr_weapon_favoured_5" value="1"><input name="attr_weapon_skill_name_5" type="text"></td>
+                                <td><input name="attr_weapon_rating_5" value="0" class="center number" type="text"></td>
                                 <td><input name="attr_weapon_damage_5" value="0" class="center number" type="text"></td>
                                 <td><input name="attr_weapon_edge_5" value="0" class="center number" type="text" style="width: 46px;"></td>
                                 <td><input name="attr_weapon_injury_5" value="0" class="center number" type="text"></td>
@@ -1045,14 +1053,161 @@
                             </tr>
 
                             <tr>
-                                <td><button type="roll" value="/me @{translation_attacks_with_a} @{weapon_skill_name_6} @{translation_against_tn} ?{@{translation_target_number}|14}pan></td>
-                        <td><span class="label" data-Enc</span></td>
-                    </tr>
-                </the <td class="sheet-gear-name"><input type="text" name="attr_gear"number" name="attr_gear_encumbrance_1" value="0"></td>
-                  <td class="sheet-gear-enc"><input type="number" name     </tr>
+                                <td><button type="roll" value="/me @{translation_attacks_with_a} @{weapon_skill_name_6} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{weapon_rating_6}t[@{weary}] > ?{@{translation_target_number}|14}" name="weapon6check"></button></td>
+                                <td><input type="checkbox" name="attr_weapon_favoured_6" value="1"><input name="attr_weapon_skill_name_6" type="text"></td>
+                                <td><input name="attr_weapon_rating_6" value="0" class="center number" type="text"></td>
+                                <td><input name="attr_weapon_damage_6" value="0" class="center number" type="text"></td>
+                                <td><input name="attr_weapon_edge_6" value="0" class="center number" type="text" style="width: 46px;"></td>
+                                <td><input name="attr_weapon_injury_6" value="0" class="center number" type="text"></td>
+                                <td><input name="attr_weapon_called_shot_6" value="" type="text"></td>
+                                <td><input name="attr_weapon_encumbrance_6" value="0" class="center number" type="text"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </td>
+                <td>
+
+                    <h2 data-i18n="combat-values">Combat Values</h2>
+
+                    <table class="sheet-combat-values">
+                        <tr>
+                            <td>
+
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <span class="label" data-i18n="damage">Damage</span>
+                                            <input class="number" type="number" name="attr_damage" value="0">
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <span class="label" data-i18n="ranged">Ranged</span>
+                                            <input class="number" type="number" name="attr_ranged" value="0">
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td><td>
+
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <span class="label" data-i18n="parry">Parry</span>
+                                            <input class="number" type="number" name="attr_parry" value="0">
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <span class="label" data-i18n="shield">Shield</span>
+                                            <input class="number" type="number" name="attr_shield" value="0">
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td><td>
+
+                                <table>
+                                    <tr>
+                                        <td class="sheet-armour-container">
+                                            <span class="label" data-i18n="armour">Armour</span>
+                                            <input class="number" type="number" name="attr_armour" value="0">
+                                            <button type="roll" value="/me @{translation_rolls_for} @{translation_armour} @{translation_against_tn} ?{@{translation_injury}|14}.\n/roll 1t[feat] + @{armour}t[@{weary}] + @{head-gear} > ?{@{translation_injury}|14}" name="armourcheck"></button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <span class="label" data-i18n="head-gear">Head Gear</span>
+                                            <input class="number" type="number" name="attr_head-gear" value="0">
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+        </table>
+
+    	<table class="sheet-combat">
+            <tr>
+                <td colspan="2">
+
+                    <h2 data-i18n="mount">Mount</h2>
+
+                    <table class="sheet-weapon-skills">
+                        <thead>
+                            <tr>
+								<td></td>
+                                <td><span class="label" data-i18n="mount-name">Name</span></td>
+                                <td><span class="label" data-i18n="mount-type">Type</span></td>
+                                <td><span class="label" data-i18n="mount-size">Size</span></td>
+                                <td style="width: 80px;"><span class="label" class="sheet-center" data-i18n="mount-riding-mod">Riding Mod.</span></td>
+								<td style="width: 80px;"><span class="label" class="sheet-center" data-i18n="mount-charge-bonus">Charge Bonus</span></td>
+								<td style="width: 80px;"><span class="label" class="sheet-center" data-i18n="mount-arm-red">Arm.Red.</span></td>
+								<td><span class="label" data-i18n="mount-qualities">Qualities</span></td>
+							</tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td><button type="roll" value="/me @{translation_charges_with} @{mount_name_1} @{translation_an_attack} @{translation_against_tn} [[?{@{translation_target_number}|16} + @{mount_modifier_1}]].\n/roll 1t[feat] + @{athletics}t[@{weary}] > [[?{@{translation_target_number}|16} + @{mount_modifier_1}]]" name="mount1check"></button></td>
+								<td><input name="attr_mount_name_1" type="text" style="width: 160px;"></td>
+								<td><input name="attr_mount_type_1" type="text" style="width: 80px;"></td>
+								<td><input name="attr_mount_size_1" type="text" style="width: 50px;"></td>
+								<td><input name="attr_mount_modifier_1" value="0" class="center number" type="text"></td>
+                                <td><input name="attr_mount_damage_1" value="0" class="center number" type="text"></td>
+                                <td><input name="attr_mount_reduction_1" value="0" class="center number" type="text"></td>
+								<td><input name="attr_mount_qualities_1" type="text" style="width: 240px;"></td>
+							</tr>
+
+                            <tr>
+                                <td><button type="roll" value="/me @{translation_charges_with} @{mount_name_2} @{translation_an_attack} @{translation_against_tn} [[?{@{translation_target_number}|16} + @{mount_modifier_2}]].\n/roll 1t[feat] + @{athletics}t[@{weary}] > [[?{@{translation_target_number}|16} + @{mount_modifier_2}]]" name="mount2check"></button></td>
+								<td><input name="attr_mount_name_2" type="text" style="width: 160px;"></td>
+                                <td><input name="attr_mount_type_2" type="text" style="width: 80px;"></td>
+								<td><input name="attr_mount_size_2" type="text" style="width: 50px;"></td>
+								<td><input name="attr_mount_modifier_2" value="0" class="center number" type="text"></td>
+                                <td><input name="attr_mount_damage_2" value="0" class="center number" type="text"></td>
+                                <td><input name="attr_mount_reduction_2" value="0" class="center number" type="text"></td>
+								<td><input name="attr_mount_qualities_2" type="text" style="width: 240px;"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </td>
+
+            </tr>
+        </table>
+
+
+        <h2 data-i18n="gear">Gear</h2>
+
+            <table style="width: 100%;" class="sheet-gear-list">
+                <thead>
                     <tr>
-                        <tdtr_gear_name_3"></td>
-                        <td class="sheet-" value="0"></td>
+                        <td><span class="label" data-i18n="description">Description</span></td>
+                        <td style="width: 1%"><span class="label" data-i18n="encumbrance-abbreviation">Enc</span></td>
+                        <td><span class="label" data-i18n="description">Description</span></td>
+                        <td style="width: 1%"><span class="label" data-i18n="encumbrance-abbreviation">Enc</span></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="sheet-gear-name"><input type="text" name="attr_gear_name_1"></td>
+                        <td class="sheet-gear-enc"><input type="number" name="attr_gear_encumbrance_1" value="0"></td>
+                        <td class="sheet-gear-name"><input type="text" name="attr_gear_name_2"></td>
+                        <td class="sheet-gear-enc"><input type="number" name="attr_gear_encumbrance_2" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td class="sheet-gear-name"><input type="text" name="attr_gear_name_3"></td>
+                        <td class="sheet-gear-enc"><input type="number" name="attr_gear_encumbrance_3" value="0"></td>
                         <td class="sheet-gear-name"><input type="text" name="attr_gear_name_4"></td>
                         <td class="sheet-gear-enc"><input type="number" name="attr_gear_encumbrance_4" value="0"></td>
                     </tr>
