@@ -46,8 +46,20 @@
 
 .sheet-logo {
     text-align: center;
-    margin-bottom: 30px;
     margin-top: -175px;
+    margin-bottom: 30px;
+    height: 180px;
+    background-image: url('https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/The%20One%20Ring/assets/images/logo-eng.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.charsheet.lang-de .sheet-logo {
+    background-image: url('https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/The%20One%20Ring/assets/images/logo-de.gif');
+}
+
+.charsheet.lang-fr .sheet-logo {
+    background-image: url('https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/The%20One%20Ring/assets/images/logo-fr.png');
 }
 
 label {
