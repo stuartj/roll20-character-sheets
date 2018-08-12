@@ -577,12 +577,16 @@ tr.sheet-attr-group-skills td.sheet-attr-skill-wrapper button[type=roll] {
     margin-right: 0px;
 }
 
-.sheet-pc input[type=text] {
+.sheet-pc input, .sheet-pc textarea {
     font-size: 16px;
     color: black;
+}
+
+.sheet-pc input[type=text] {
     padding-bottom: 1px;
     margin-left: 5px;
 }
+
 
 /* copied from above to keep WIP work together */
 [name*='attr_weapon_skill_name'] {
