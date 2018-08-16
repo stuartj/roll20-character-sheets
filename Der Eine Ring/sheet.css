@@ -54,12 +54,16 @@
     background-position: center center;
 }
 
-.charsheet.lang-de .sheet-logo {
+.lang-de .sheet-logo {
     background-image: url('https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/Der%20Eine%20Ring/assets/images/logo-de.gif');
 }
 
-.charsheet.lang-fr .sheet-logo {
+.lang-fr .sheet-logo {
     background-image: url('https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/Der%20Eine%20Ring/assets/images/logo-fr.png');
+}
+
+.lang-es .sheet-logo {
+    background-image: url('https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/Der%20Eine%20Ring/assets/images/logo-es.png');
 }
 
 label {
