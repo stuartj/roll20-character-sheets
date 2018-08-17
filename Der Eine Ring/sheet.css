@@ -638,6 +638,16 @@ td#sheet-upper-right-section {
 	color:black;
 }
 
+input#sheet-xp-spent {
+    font-size: 22px;
+}
+
+input#sheet-xp-input {
+    font-size: 15px;
+    padding-bottom: 2px;
+    margin-left: 2px;
+}
+
 .sheet-rating-wrapper .sheet-nw-sub-rating {
   border-radius: 100%;
   background: url('https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/Der%20Eine%20Ring/assets/images/parchment.jpg') !important;
