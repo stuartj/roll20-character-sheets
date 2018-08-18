@@ -271,6 +271,13 @@ textarea {
     width: 100px;
 }
 
+.lang-de .sheet-skill-groups,
+.lang-de .sheet-attr-group-skills td:last-child {
+    padding-left: 20px !important;
+    width: 100px;
+}
+
+
 [name*="attr_gear_name"] {
     width: 100%;
 }
