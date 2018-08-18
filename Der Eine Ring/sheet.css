@@ -335,8 +335,16 @@ textarea {
 .sheet-gear-list {
 }
 
+.sheet-gear-name {
+    padding-right: 10px;
+}
+
 .sheet-gear-enc {
     padding: 0 5px;
+}
+
+.sheet-gear-enc input {
+    padding-bottom: 1px;
 }
 
 .sheet-gear-list td:nth-child(2) {
