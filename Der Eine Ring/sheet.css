@@ -596,6 +596,11 @@ tr.sheet-attr-group-skills td.sheet-attr-skill-wrapper button[type=roll] {
     margin-right: 0px;
 }
 
+/* move button and skill names closer to skill 'dots' for English */
+.lang-en tr.sheet-attr-group-skills td.sheet-attr-skill-wrapper button[type=roll] {
+    margin-left: 20px;
+}
+
 .sheet-pc input, .sheet-pc textarea {
     font-size: 16px;
     color: black;
