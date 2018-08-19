@@ -223,11 +223,13 @@ textarea {
     padding-bottom: 10px !important;
 }
 
-.sheet-attribute-favoured label {
-    line-height: 40px;
-    text-align: right !important;
-    display: block !important;
-    margin-top: -25px;
+.sheet-attribute-favoured span.sheet-label {
+    position: relative;
+    top: -16px;
+    right: -12px;
+    text-align: right;
+    width: 70px;
+    display: inline-block;
 }
 
 .sheet-attribute-favoured input {
