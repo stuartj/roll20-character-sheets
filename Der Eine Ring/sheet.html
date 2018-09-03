@@ -65,7 +65,7 @@
             </td>
         </tr>
 
-        <tr class="sheet-group-attrs-skills">
+        <tr class="sheet-group-attrs-skills sheet-horizontal-pad">
             <td colspan="2">
                 <table class="wide">
                     <tr>
@@ -445,7 +445,7 @@
                     <table class="sheet-wide-PC">
                         <tr>
                             <td class="sheet-small"><span class='label' data-i18n="character-name">Name</span></td>
-                            <td style="padding-right: 10px;"><input type="text" name="attr_name" style="width: 100%;"></td>
+                            <td style="padding-right: 15px;"><input type="text" name="attr_name" style="width: 100%;"></td>
             
                             <td class="sheet-small"><span class='label' data-i18n="culture">Culture</span></td>
                             <td><input type="text" name="attr_culture" style="width: 100%;"></td>
@@ -453,7 +453,7 @@
             
                         <tr>
                             <td class="sheet-small"><span class='label' data-i18n="standard-of-living">Standard of Living</span></td>
-                            <td style="padding-right: 10px;"><input type="text" name="attr_standard_of_living" style="width: 100%;"></td>
+                            <td style="padding-right: 15px;"><input type="text" name="attr_standard_of_living" style="width: 100%;"></td>
             
                             <td class="sheet-small"><span class='label' data-i18n="cultural-blessing">Cultural Blessing</span></td>
                             <td><input type="text" name="attr_cultural_blessing" style="width: 100%;"></td>
@@ -461,7 +461,7 @@
             
                         <tr>
                             <td class="sheet-small"><span class='label' data-i18n="calling">Calling</span></td>
-                            <td style="padding-right: 10px;"><input type="text" name="attr_calling" style="width: 100%;"></td>
+                            <td style="padding-right: 15px;"><input type="text" name="attr_calling" style="width: 100%;"></td>
             
                             <td class="sheet-small"><span class='label' data-i18n="shadow-weakness">Shadow Weakness</span></td>
                             <td><input type="text" name="attr_shadow_weakness" style="width: 100%;"></td>
@@ -479,7 +479,7 @@
 
         			<h2 data-i18n="attributes">Attribute</h2>
 
-                    <table class="sheet-group-attrs-skills">
+                    <table class="sheet-group-attrs-skills sheet-horizontal-pad">
                         <tr>
                             <td>
             
@@ -506,7 +506,7 @@
                                     <tr class="sheet-attribute">
                                         <td>
                                             <span class="label" data-i18n="heart">Heart</span>
-			                                <div class="sheet-hover-info" data-i18n="heart-description">Measures a character�s capacity for emotion, energy and enthusiasm. A hero with a high Heart score can be fiery, intense, and hard to demoralise. Activities that benefit from a passionate or energetic temper may be influenced by a character�s Heart score.</div>
+			                                <div class="sheet-hover-info" data-i18n="heart-description">Measures a character's capacity for emotion, energy and enthusiasm. A hero with a high Heart score can be fiery, intense, and hard to demoralise. Activities that benefit from a passionate or energetic temper may be influenced by a character's Heart score.</div>
                                         </td>
                                         <td>
                                             <input name="attr_heart" type="text" value="0"></td>
@@ -526,7 +526,7 @@
                                     <tr class="sheet-attribute">
                                         <td>
                                             <span class="label" data-i18n="wits">Wits</span>
-			                                <div class="sheet-hover-info" data-i18n="wits-description">A hero with a high Wits rating can be clever, attentive and strong-willed. A sharp-witted person is a quick thinker, and probably alert and vigilant, so any action that calls upon these qualities benefits from a hero�s Wits score.</div>
+			                                <div class="sheet-hover-info" data-i18n="wits-description">A hero with a high Wits rating can be clever, attentive and strong-willed. A sharp-witted person is a quick thinker, and probably alert and vigilant, so any action that calls upon these qualities benefits from a hero's Wits score.</div>
                                         </td>
                                         <td>
                                             <input name="attr_wits" type="text" value="0"></td>
@@ -546,22 +546,22 @@
                 </td>
                 <td id='upper-right-section'>
                     <!-- WIP integration from Glorelendil prototype -->
-                    <div class="rating-wrapper" id="xp-wrapper">
+                    <div class="rating-wrapper">
                         <span class="label" data-i18n="experience">Experience</span>
                         <img class="rating-diamond" src="https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/Der%20Eine%20Ring/assets/images/rating-diamond.png">
                         <input id="xp-spent" name="attr_used_experience_points" value="0" type="text">
                         <input id="xp-input" name="attr_unused_experience_points" value="0" class="nw-sub-rating" type="text">
                     </div>
-                    <div class="rating-wrapper" id="valour-wrapper">
+                    <div class="rating-wrapper">
                         <span class="label" data-i18n="valour">Valour</span>
-                        <div class="sheet-hover-info" data-i18n="valour-description">Valour is a measure of a character’s courage, as tempered by dangerous deeds. A man of valour is willing to place himself in danger for the safety of others. In a time where new threats arise each day, courage is highly prized, and a valiant adventurer is often esteemed above all other individuals. For this reason, a hero’s rank in Valour also reflects the level of renown he attained as a doer of great deeds. When a player decides to favour Valour over Wisdom, his hero’s actions, not his judgement, will tend to prove his status in the eyes of others. From the lowliest start as a wandering adventurer, a hero might one day equal the repute and respect earned by a famous champion or king.</div>
+                        <div class="sheet-hover-info" data-i18n="valour-description">Valour is a measure of a character’s courage, as tempered by dangerous deeds. A man of valour is willing to place himself in danger for the safety of others. In a time where new threats arise each day, courage is highly prized, and a valiant adventurer is often esteemed above all other individuals. For this reason, a hero’s rank in Valour also reflects the level of renown he attained as a doer of great deeds.<br><br>When a player decides to favour Valour over Wisdom, his hero’s actions, not his judgement, will tend to prove his status in the eyes of others. From the lowliest start as a wandering adventurer, a hero might one day equal the repute and respect earned by a famous champion or king.</div>
                         <img class="rating-diamond" src="https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/Der%20Eine%20Ring/assets/images/rating-diamond.png">
                         <input id="valour-input" name="attr_valour" value="0" type="text">
                         <button type="roll" value="/me @{translation_rolls_for} @{translation_valour} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{valour}t[@{weary}] > ?{@{translation_target_number}|14}" name="valourcheck"></button>
                     </div>
-                    <div class="rating-wrapper" id="wisdom-wrapper">
+                    <div class="rating-wrapper">
                         <span class="label" data-i18n="wisdom">Wisdom</span>
-                        <div class="sheet-hover-info" data-i18n="wisdom-description">A character’s knowledge of his own capabilities, his self- confidence and capacity for good judgement changes and improves with struggles and strife. A characteristic with deeply personal implications, a hero’s rank in Wisdom also determines the stature of the hero in the eyes of those that prize these qualities. When Wisdom is chosen over Valour when spending Experience points, it suggests that the hero’s adventures are affecting him subtly but profoundly. Starting as a more or less ingenuous individual with an adventurous spirit, the hero can achieve the maturity and sagacity of the Wise.</div>
+                        <div class="sheet-hover-info" data-i18n="wisdom-description">A character’s knowledge of his own capabilities, his self- confidence and capacity for good judgement changes and improves with struggles and strife. A characteristic with deeply personal implications, a hero’s rank in Wisdom also determines the stature of the hero in the eyes of those that prize these qualities.<br><br>When Wisdom is chosen over Valour when spending Experience points, it suggests that the hero’s adventures are affecting him subtly but profoundly. Starting as a more or less ingenuous individual with an adventurous spirit, the hero can achieve the maturity and sagacity of the Wise.</div>
                         <img class="rating-diamond" src="https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/Der%20Eine%20Ring/assets/images/rating-diamond.png">
                         <input id="wisdom-input" name="attr_wisdom" value="0" type="text">
                         <button type="roll" value="/me @{translation_rolls_for} @{translation_wisdom} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{wisdom}t[@{weary}] > ?{@{translation_target_number}|14}." name="wisdomcheck"></button>
@@ -587,7 +587,7 @@
                     <button type="roll" value="/me @{translation_rolls_for} @{translation_awe} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{awe}t[@{weary}] > ?{@{translation_target_number}|14}" name="awecheck"></button>
                     <input type="checkbox" name="attr_awe_favoured" value="1">
                     <span class='label' data-i18n="awe">Awe</span>
-                    <div class="sheet-hover-info" data-i18n="awe-description">This skill measures a hero�s capacity to provoke respect in onlookers, and determines the impression a hero makes on someone he meets for the first time. Depending on the circumstances and the hero�s intentions or disposition, it can be used to instil wonderment, admiration, or even fear. Awe arises from a character�s native charisma, but can also be engineered with a dramatic entrance or impressive attire. A successful use of the skill provokes the chosen effect. A failure fails to have any impact, or can even lead to the opposite result! Achieving a great success means that the hero has won the hearts of the onlookers, or cowed them into silent submission. An extraordinary success may produce open reverence, or panic.</div>
+                    <div class="sheet-hover-info" data-i18n="awe-description">This skill measures a hero’s capacity to provoke respect in onlookers, and determines the impression a hero makes on someone he meets for the first time. Depending on the circumstances and the hero’s intentions or disposition, it can be used to instil wonderment, admiration, or even fear. <span class='sheet-strong'>Awe</span> arises from a character’s native charisma, but can also be engineered with a dramatic entrance or impressive attire.<br><br>A successful use of the skill provokes the chosen effect. A failure fails to have any impact, or can even lead to the opposite result! Achieving a great success means that the hero has won the hearts of the onlookers, or cowed them into silent submission. An extraordinary success may produce open reverence, or panic.</div>
                     <div class="sheet-dots">
                         <input type="radio" name="attr_awe" value="0" checked="checked" /><span></span>
                         <input type="radio" name="attr_awe" value="1" /><span></span>
@@ -603,7 +603,7 @@
                     <button type="roll" value="/me @{translation_rolls_for} @{translation_inspire} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{inspire}t[@{weary}] > ?{@{translation_target_number}|14}" name="inspirecheck"></button>
                     <input type="checkbox" name="attr_inspire_favoured" value="1">
                     <span class='label' data-i18n="inspire">Inspire</label></span>
-                    <div class="sheet-hover-info" data-i18n="inspire-description">A hero able to Inspire others can instil positive feelings in others, urging them to act on the matter at hand. This is a feat achieved mainly through example, charisma and personal conviction, rather than through the effective use of words (which falls under Persuade, below). It can be used on individuals, but is especially effective in influencing crowds. Heroes with high Inspire ratings can be forceful orators, passionate agitators, and well- loved leaders of men. A successful Inspire roll awakens a chosen feeling in the subject, so long as it is not in opposition to their current mood. A great success is enough to influence wholly disinterested individuals, and an extraordinary success may turn rivals into supporters.</div>
+                    <div class="sheet-hover-info" data-i18n="inspire-description">A hero able to <span class='sheet-strong'>Inspire</span> others can instil positive feelings in others, urging them to act on the matter at hand. This is a feat achieved mainly through example, charisma and personal conviction, rather than through the effective use of words (which falls under <span class='sheet-strong'>Persuade</span>, below). It can be used on individuals, but is especially effective in influencing crowds. Heroes with high <span class='sheet-strong'>Inspire</span> ratings can be forceful orators, passionate agitators, and well- loved leaders of men.<br><br>A successful <span class='sheet-strong'>Inspire</span> roll awakens a chosen feeling in the subject, so long as it is not in opposition to their current mood. A great success is enough to influence wholly disinterested individuals, and an extraordinary success may turn rivals into supporters.</div>
                     <div class="sheet-dots">
                         <input type="radio" name="attr_inspire" value="0" checked="checked" /><span></span>
                         <input type="radio" name="attr_inspire" value="1" /><span></span>
@@ -619,7 +619,7 @@
                     <button type="roll" value="/me @{translation_rolls_for} @{translation_persuade} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{persuade}t[@{weary}] > ?{@{translation_target_number}|14}" name="persuadecheck"></button>
                     <input type="checkbox" name="attr_persuade_favoured" value="1">
                     <span class='label' data-i18n="persuade">Persuade</span>
-                    <div class="sheet-hover-info" data-i18n="persuade-description">This skill allows a hero to apply his or her reasoning to convince another individual of an idea or course of action. It can be used to influence small groups of listeners, but only if used in an appropriate context, such as a common hall. An attempt at persuasion requires more time than other Personality skills, but can have a more lasting impact on other characters� actions. A high Persuade score denotes an uncommon eloquence, a love of speech and knowledge of its proper use and its effect on listeners. Wise men, advisors to chieftains and kings and their messengers all share this passion for the spoken word. The successful use of the skill lets the hero convince his audience of the flaws in their current position. A great success convinces the subject of the quality of the hero�s stance, while an extraordinary success may turn the subject into an ardent believer.</div>
+                    <div class="sheet-hover-info" data-i18n="persuade-description">This skill allows a hero to apply his or her reasoning to convince another individual of an idea or course of action. It can be used to influence small groups of listeners, but only if used in an appropriate context, such as a common hall. An attempt at persuasion requires more time than other Personality skills, but can have a more lasting impact on other characters' actions. A high <span class='sheet-strong'>Persuade</span> score denotes an uncommon eloquence, a love of speech and knowledge of its proper use and its effect on listeners. Wise men, advisors to chieftains and kings and their messengers all share this passion for the spoken word.<br><br>The successful use of the skill lets the hero convince his audience of the flaws in their current position. A great success convinces the subject of the quality of the hero's stance, while an extraordinary success may turn the subject into an ardent believer.</div>
                     <div class="sheet-dots">
                         <input type="radio" name="attr_persuade" value="0" checked="checked" /><span></span>
                         <input type="radio" name="attr_persuade" value="1" /><span></span>
@@ -633,7 +633,7 @@
 
                 <td class="attr-personality attr-skill-group">
                     <span class='label' data-i18n="personality">Personality</span>
-                    <div class="sheet-hover-info" data-i18n="personality-description">A hero�s personality comes through in his capacity to impress, encourage and influence others. A good level of proficiency in all three skills in this group is the mark of a leader.</div>
+                    <div class="sheet-hover-info" data-i18n="personality-description">A hero's personality comes through in his capacity to impress, encourage and influence others. A good level of proficiency in all three skills in this group is the mark of a leader.</div>
                     <div class="sheet-dots">
                         <input type="radio" name="attr_personality" value="0" checked="checked" /><span></span>
                         <input type="radio" name="attr_personality" value="1" /><span></span>
@@ -650,7 +650,7 @@
                     <button type="roll" value="/me @{translation_rolls_for} @{translation_athletics} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{athletics}t[@{weary}] > ?{@{translation_target_number}|14}" name="athleticscheck"></button>
                     <input type="checkbox" name="attr_athletics_favoured" value="1">
                     <span class='label' data-i18n="athletics">Athletics</span>
-                    <div class="sheet-hover-info" data-i18n="athletics-description">Athletics is a broad skill, covering most of the physical activities that a hero might undertake while adventuring, including r unning, leaping, climbing, swimming and throwing stones or other small objects. Heroes with high Athletics skill scores exhibit a winning combination of physical prowess, grace and control, generally gained through continuous exercise and daily exertion. A successful Athletics roll produces a satisfactory outcome in the physical activity, while a failed roll might even lead to serious harm, depending on the circumstances. A great or extraordinary result suggests a spectacular achievement.</div>
+                    <div class="sheet-hover-info" data-i18n="athletics-description"><span class='sheet-strong'>Athletics</span> is a broad skill, covering most of the physical activities that a hero might undertake while adventuring, including r unning, leaping, climbing, swimming and throwing stones or other small objects. Heroes with high <span class='sheet-strong'>Athletics</span> skill scores exhibit a winning combination of physical prowess, grace and control, generally gained through continuous exercise and daily exertion.<br><br>A successful <span class='sheet-strong'>Athletics</span> roll produces a satisfactory outcome in the physical activity, while a failed roll might even lead to serious harm, depending on the circumstances. A great or extraordinary result suggests a spectacular achievement.</div>
                     <div class="sheet-dots">
                         <input type="radio" name="attr_athletics" value="0" checked="checked" /><span></span>
                         <input type="radio" name="attr_athletics" value="1" /><span></span>
@@ -666,7 +666,7 @@
                     <button type="roll" value="/me @{translation_rolls_for} @{translation_travel} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{travel}t[@{weary}] > ?{@{translation_target_number}|14}" name="travelcheck"></button>
                     <input type="checkbox" name="attr_travel_favoured" value="1">
                     <span class='label' data-i18n="travel">Travel</span>
-                    <div class="sheet-hover-info" data-i18n="travel-description">In the Third Age, the cities, villages and towns of Middle- earth are often separated by many leagues of wild or deserted areas. Roads that used to lead safely to distant realms now end in broken trails that go nowhere. When the company needs to cover a distance across uncertain territory, including by boat, every companion is required to perform one or more tests using the Travel skill to avoid becoming weary too soon. While certainly the product of exper ience, the use of Travel benef its mostly from a hero�s strength of spirit.</div>
+                    <div class="sheet-hover-info" data-i18n="travel-description">In the Third Age, the cities, villages and towns of Middle- earth are often separated by many leagues of wild or deserted areas. Roads that used to lead safely to distant realms now end in broken trails that go nowhere.<br><br>When the company needs to cover a distance across uncertain territory, including by boat, every companion is required to perform one or more tests using the <span class='sheet-strong'>Travel</span> skill to avoid becoming weary too soon. While certainly the product of exper ience, the use of Travel benef its mostly from a hero's strength of spirit.</div>
                     <div class="sheet-dots">
                         <input type="radio" name="attr_travel" value="0" checked="checked" /><span></span>
                         <input type="radio" name="attr_travel" value="1" /><span></span>
@@ -682,7 +682,7 @@
                     <button type="roll" value="/me @{translation_rolls_for} @{translation_stealth} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{stealth}t[@{weary}] > ?{@{translation_target_number}|14}" name="stealthcheck"></button>
                     <input type="checkbox" name="attr_stealth_favoured" value="1">
                     <span class='label' data-i18n="stealth">Stealth</span>
-                    <div class="sheet-hover-info" data-i18n="stealth-description">A hero resorts to Stealth whenever he needs, or is forced, to act in a furtive or secret way. The skill includes hiding, moving quietly and shadowing others. These activities often rely on quickness and precision, so a stealthy hero combines practiced caution with the ability to judge the right moment to take a chance. Hunters, burglars, and solitary fighters use Stealth to prosper in their trade. A successful Stealth roll indicates that the character has gone unnoticed, while a failure has almost certainly attracts unwanted attention. A great or extraordinary success produces an outcome so flawless that it even be impossible to trace the hero�s actions after the fact.</div>
+                    <div class="sheet-hover-info" data-i18n="stealth-description">A hero resorts to <span class='sheet-strong'>Stealth</span> whenever he needs, or is forced, to act in a furtive or secret way. The skill includes hiding, moving quietly and shadowing others. These activities often rely on quickness and precision, so a stealthy hero combines practiced caution with the ability to judge the right moment to take a chance. Hunters, burglars, and solitary fighters use <span class='sheet-strong'>Stealth</span> to prosper in their trade.<br><br>A successful <span class='sheet-strong'>Stealth</span> roll indicates that the character has gone unnoticed, while a failure has almost certainly attracts unwanted attention.<br><br>A great or extraordinary success produces an outcome so flawless that it even be impossible to trace the hero's actions after the fact.</div>
                     <div class="sheet-dots">
                         <input type="radio" name="attr_stealth" value="0" checked="checked" /><span></span>
                         <input type="radio" name="attr_stealth" value="1" /><span></span>
@@ -712,7 +712,7 @@
                     <button type="roll" value="/me @{translation_rolls_for} @{translation_awareness} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{awareness}t[@{weary}] > ?{@{translation_target_number}|14}" name="awarenesscheck"></button>
                     <input type="checkbox" name="attr_awareness_favoured" value="1">
                     <span class='label' data-i18n="awareness">Awareness</span>
-                    <div class="sheet-hover-info" data-i18n="awareness-description">The Awareness skill represents a hero�s readiness to react and his ability to notice something unexpected, out of the ordinary, or difficult to detect. High skill reflects both keen senses and the experience to understand what you see and hear. A high Awareness rating expresses an extraordinar y watchfulness, and is extremely useful to a companion who ser ves as a look-out for the company.</div>
+                    <div class="sheet-hover-info" data-i18n="awareness-description">The <span class='sheet-strong'>Awareness</span> skill represents a hero's readiness to react and his ability to notice something unexpected, out of the ordinary, or difficult to detect. High skill reflects both keen senses and the experience to understand what you see and hear.<br><br>A high <span class='sheet-strong'>Awareness</span> rating expresses an extraordinar y watchfulness, and is extremely useful to a companion who ser ves as a look-out for the company.</div>
                     <div class="sheet-dots">
                         <input type="radio" name="attr_awareness" value="0" checked="checked" /><span></span>
                         <input type="radio" name="attr_awareness" value="1" /><span></span>
@@ -728,7 +728,7 @@
                     <button type="roll" value="/me @{translation_rolls_for} @{translation_insight} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{insight}t[@{weary}] > ?{@{translation_target_number}|14}" name="insightcheck"></button>
                     <input type="checkbox" name="attr_insight_favoured" value="1">
                     <span class='label' data-i18n="insight">Insight</span>
-                    <div class="sheet-hover-info" data-i18n="insight-description">Insight is the ability of a hero to see beyond appearances, recognising people�s hidden thoughts and beliefs. Heroes with Insight can recognise when someone is lying, and can draw useful conclusions about people�s motives. A hero with a high Insight score is often recognised as being a sensible and discerning individual, and many might seek his counsel. A successful Insight roll provides the hero with a faithful, if partial, portrait of the character observed. A great or extraordinary success reveals truths about an individual of which he himself is ignorant. Insight tests may be rolled in opposition to an adversary using Persuade or another Personality skill.</div>
+                    <div class="sheet-hover-info" data-i18n="insight-description"><span class='sheet-strong'>Insight</span> is the ability of a hero to see beyond appearances, recognising people's hidden thoughts and beliefs. Heroes with <span class='sheet-strong'>Insight</span> can recognise when someone is lying, and can draw useful conclusions about people's motives. A hero with a high <span class='sheet-strong'>Insight</span> score is often recognised as being a sensible and discerning individual, and many might seek his counsel. A successful <span class='sheet-strong'>Insight</span> roll provides the hero with a faithful, if partial, portrait of the character observed. A great or extraordinary success reveals truths about an individual of which he himself is ignorant. <span class='sheet-strong'>Insight</span> tests may be rolled in opposition to an adversary using <span class='sheet-strong'>Persuade</span> or another Personality skill.</div>
                     <div class="sheet-dots">
                         <input type="radio" name="attr_insight" value="0" checked="checked" /><span></span>
                         <input type="radio" name="attr_insight" value="1" /><span></span>
@@ -745,7 +745,7 @@
                     <button type="roll" value="/me @{translation_rolls_for} @{translation_search} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{search}t[@{weary}] > ?{@{translation_target_number}|14}" name="searchcheck"></button>
                     <input type="checkbox" name="attr_search_favoured" value="1">
                     <span class='label' data-i18n="search">Search</span>
-                    <div class="sheet-hover-info" data-i18n="search-description">Search is used when trying to find something by close examination. This skill may let a hero search a library to locate a piece of relevant information, look for concealed doors or hidden inscriptions, recognise a familiar face in a crowd or even search a suspected thief�s clothing. One roll is required for each inspection of a small area, such as a room. Search rolls are generally initiated by the player rather than the Loremaster; Awareness is used to see if the characters passively notice something. A successful Search roll generally lets the characters find what they are looking for if it is to be found. A great or extraordinary success usually means the object is found more quickly. If an item is particularly well hidden, the Loremaster could decide that a higher level of success is required to uncover it.</div>
+                    <div class="sheet-hover-info" data-i18n="search-description"><span class='sheet-strong'>Search</span> is used when trying to find something by close examination. This skill may let a hero search a library to locate a piece of relevant information, look for concealed doors or hidden inscriptions, recognise a familiar face in a crowd or even search a suspected thief's clothing. One roll is required for each inspection of a small area, such as a room. <span class='sheet-strong'>Search</span> rolls are generally initiated by the player rather than the Loremaster; <span class='sheet-strong'>Awareness</span> is used to see if the characters passively notice something. A successful <span class='sheet-strong'>Search</span> roll generally lets the characters find what they are looking for if it is to be found. A great or extraordinary success usually means the object is found more quickly. If an item is particularly well hidden, the Loremaster could decide that a higher level of success is required to uncover it.</div>
                     <div class="sheet-dots">
                         <input type="radio" name="attr_search" value="0" checked="checked" /><span></span>
                         <input type="radio" name="attr_search" value="1" /><span></span>
@@ -778,7 +778,7 @@
                     <button type="roll" value="/me @{translation_rolls_for} @{translation_explore} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{explore}t[@{weary}] > ?{@{translation_target_number}|14}" name="explorecheck"></button>
                     <input type="checkbox" name="attr_explore_favoured" value="1">
                     <span class='label' data-i18n="explore">Explore</span>
-                    <div class="sheet-hover-info" data-i18n="explore-description">Adventurers rely on their Explore skill when they move through an unfamiliar area of the Wild. An Explore test may be required during a journey to find the company�s heading, or to get back on track after a detour; to cope with adverse weather conditions or other natural hazards; to create paths through the wilderness suitable for others to follow; or to choose a suitable place to set up camp. A high Explore rating is an invaluable resource for a companion acting as a scout for his group of adventurers.</div>
+                    <div class="sheet-hover-info" data-i18n="explore-description">Adventurers rely on their <span class='sheet-strong'>Explore</span> skill when they move through an unfamiliar area of the Wild. An <span class='sheet-strong'>Explore</span> test may be required during a journey to find the company's heading, or to get back on track after a detour; to cope with adverse weather conditions or other natural hazards; to create paths through the wilderness suitable for others to follow; or to choose a suitable place to set up camp. A high <span class='sheet-strong'>Explore</span> rating is an invaluable resource for a companion acting as a scout for his group of adventurers.</div>
                     <div class="sheet-dots">
                         <input type="radio" name="attr_explore" value="0" checked="checked" /><span></span>
                         <input type="radio" name="attr_explore" value="1" /><span></span>
@@ -795,7 +795,7 @@
                     <button type="roll" value="/me @{translation_rolls_for} @{translation_healing} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{healing}t[@{weary}] > ?{@{translation_target_number}|14}" name="healingcheck"></button>
                     <input type="checkbox" name="attr_healing_favoured" value="1">
                     <span class='label' data-i18n="healing">Healing</span>
-                    <div class="sheet-hover-info" data-i18n="healing-description">The knowledge of how to relieve pain and apply remedies to restore health to the suffering is an ancient one, and treatments differ from culture to culture. Almost all traditions, however, agree on the treatment of serious injuries, which must be immediately tended to keep from worsening. The Healing skill includes bone setting and the use of herbs or salves, but the outcome relies on the ability of the healer to understand what ails the sufferer and determine what should be done.</div>
+                    <div class="sheet-hover-info" data-i18n="healing-description">The knowledge of how to relieve pain and apply remedies to restore health to the suffering is an ancient one, and treatments differ from culture to culture. Almost all traditions, however, agree on the treatment of serious injuries, which must be immediately tended to keep from worsening.<br><br>The <span class='sheet-strong'>Healing</span> skill includes bone setting and the use of herbs or salves, but the outcome relies on the ability of the healer to understand what ails the sufferer and determine what should be done.</div>
                     <div class="sheet-dots">
                         <input type="radio" name="attr_healing" value="0" checked="checked" /><span></span>
                         <input type="radio" name="attr_healing" value="1" /><span></span>
@@ -812,7 +812,7 @@
                     <button type="roll" value="/me @{translation_rolls_for} @{translation_hunting} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{hunting}t[@{weary}] > ?{@{translation_target_number}|14}" name="huntingcheck"></button>
                     <input type="checkbox" name="attr_hunting_favoured" value="1">
                     <span class='label' data-i18n="hunting">Hunting</span>
-                    <div class="sheet-hover-info" data-i18n="hunting-description">Knowing how to hunt is a fundamental skill common in much of Middle-earth. A Hunting roll may be required when pursuing a creature through wild areas, or to locate tracks and follow them, or to identify a quarry by its spoor. The skill also covers preparing traps and the training and use of hunting dogs or birds. In wilder areas, hunters learn to apply their trade to more dangerous quarry, such as Orcs, Spiders or Wargs, or else risk becoming the prey.</div>
+                    <div class="sheet-hover-info" data-i18n="hunting-description">Knowing how to hunt is a fundamental skill common in much of Middle-earth. A <span class='sheet-strong'>Hunting</span> roll may be required when pursuing a creature through wild areas, or to locate tracks and follow them, or to identify a quarry by its spoor. The skill also covers preparing traps and the training and use of hunting dogs or birds. In wilder areas, hunters learn to apply their trade to more dangerous quarry, such as Orcs, Spiders or Wargs, or else risk becoming the prey.</div>
                     <div class="sheet-dots">
                         <input type="radio" name="attr_hunting" value="0" checked="checked" /><span></span>
                         <input type="radio" name="attr_hunting" value="1" /><span></span>
@@ -845,7 +845,7 @@
                     <button type="roll" value="/me @{translation_rolls_for} @{translation_song} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{song}t[@{weary}] > ?{@{translation_target_number}|14}" name="songcheck"></button>
                     <input type="checkbox" name="attr_song_favoured" value="1">
                     <span class='label' data-i18n="song">Song</span>
-                    <div class="sheet-hover-info" data-i18n="song-description">Hobbits and Men, Elves and Dwarves, even Goblins and maybe Orcs: all the creatures of Middle-earth celebrate by playing music and singing songs. Great deeds and grim misfortunes are remembered in verse, and pleasant or even comic stories are told to ease spirits and find comfort. Song is used to recite poems, sing songs or play instruments suitable to the character�s culture. It can also be used to learn new works or create original compositions.</div>
+                    <div class="sheet-hover-info" data-i18n="song-description">Hobbits and Men, Elves and Dwarves, even Goblins and maybe Orcs: all the creatures of Middle-earth celebrate by playing music and singing songs. Great deeds and grim misfortunes are remembered in verse, and pleasant or even comic stories are told to ease spirits and find comfort.<br><br><span class='sheet-strong'>Song</span> is used to recite poems, sing songs or play instruments suitable to the character's culture. It can also be used to learn new works or create original compositions.</div>
                     <div class="sheet-dots">
                         <input type="radio" name="attr_song" value="0" checked="checked" /><span></span>
                         <input type="radio" name="attr_song" value="1" /><span></span>
@@ -862,7 +862,7 @@
                     <button type="roll" value="/me @{translation_rolls_for} @{translation_courtesy} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{courtesy}t[@{weary}] > ?{@{translation_target_number}|14}" name="courtesycheck"></button>
                     <input type="checkbox" name="attr_courtesy_favoured" value="1">
                     <span class='label' data-i18n="courtesy">Courtesy</span>
-                    <div class="sheet-hover-info" data-i18n="courtesy-description">The Free Peoples recognise common norms of decency and ancient conventions of behaviour. Observing these traditions demonstrates respect and is a way of quickly establishing a friendly footing even with complete strangers. A hero succeeding in a Courtesy roll knows what to say at the right moment to make a good impression with their host, or is mindful of his manners when receiving guests.</div>
+                    <div class="sheet-hover-info" data-i18n="courtesy-description">The Free Peoples recognise common norms of decency and ancient conventions of behaviour. Observing these traditions demonstrates respect and is a way of quickly establishing a friendly footing even with complete strangers.<br><br>A hero succeeding in a <span class='sheet-strong'>Courtesy</span> roll knows what to say at the right moment to make a good impression with their host, or is mindful of his manners when receiving guests.</div>
                     <div class="sheet-dots">
                         <input type="radio" name="attr_courtesy" value="0" checked="checked" /><span></span>
                         <input type="radio" name="attr_courtesy" value="1" /><span></span>
@@ -879,7 +879,7 @@
                     <button type="roll" value="/me @{translation_rolls_for} @{translation_riddle} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{riddle}t[@{weary}] > ?{@{translation_target_number}|14}" name="riddlecheck"></button>
                     <input type="checkbox" name="attr_riddle_favoured" value="1">
                     <span class='label' data-i18n="riddle">Riddle</span>
-                    <div class="sheet-hover-info" data-i18n="riddle-description">Owing its name to the ancient Game, the Riddle skill represents a hero�s ability to draw conclusions from seemingly unconnected scraps of information, by deduction, reasoning and intuition. An adventurer also relies on Riddle whenever he is forced to talk about a subject but wants to conceal part of what he knows, for example to explain something about himself without revealing his true identity. An accepted custom among many creatures, speaking in riddles is usually allowed among strangers meeting for the first time who want to speak guardedly. This skill is also used to gain helpful insight from a spoken or written riddle.</div>
+                    <div class="sheet-hover-info" data-i18n="riddle-description">Owing its name to the ancient Game, the <span class='sheet-strong'>Riddle</span> skill represents a hero's ability to draw conclusions from seemingly unconnected scraps of information, by deduction, reasoning and intuition.<br><br>An adventurer also relies on <span class='sheet-strong'>Riddle</span> whenever he is forced to talk about a subject but wants to conceal part of what he knows, for example to explain something about himself without revealing his true identity.<br><br>An accepted custom among many creatures, speaking in riddles is usually allowed among strangers meeting for the first time who want to speak guardedly. This skill is also used to gain helpful insight from a spoken or written riddle.</div>
                     <div class="sheet-dots">
                         <input type="radio" name="attr_riddle" value="0" checked="checked" /><span></span>
                         <input type="radio" name="attr_riddle" value="1" /><span></span>
@@ -912,7 +912,7 @@
                     <button type="roll" value="/me @{translation_rolls_for} @{translation_craft} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{craft}t[@{weary}] > ?{@{translation_target_number}|14}" name="craftcheck"></button>
                     <input type="checkbox" name="attr_craft_favoured" value="1">
                     <span class='label' data-i18n="craft">Craft</span>
-                    <div class="sheet-hover-info" data-i18n="craft-description">The Craft skill doesn�t really cover the whole range of abilities of smiths, wrights and other artisans, but reflects the talent of a character for making or mending things by hand, although Traits like Smithcraft or Woodwright can be used to reflect proficiency in a specific craft. Craft could be used to attempt to repair the wheel of a cart, or construct an improvised raft with wood found on a river shore, or even when trying to start a fire on a windy hill. A high Craft score may indicate that the hero was a craftsman before starting his life of adventure. Some races, such as the Dwar ves and Noldor Elves, revere crafts as the highest expression of creativity.</div>
+                    <div class="sheet-hover-info" data-i18n="craft-description">The <span class='sheet-strong'>Craft</span> skill doesn't really cover the whole range of abilities of smiths, wrights and other artisans, but reflects the talent of a character for making or mending things by hand, although Traits like Smithcraft or Woodwright can be used to reflect proficiency in a specific craft. Craft could be used to attempt to repair the wheel of a cart, or construct an improvised raft with wood found on a river shore, or even when trying to start a fire on a windy hill.<br><br>A high <span class='sheet-strong'>Craft</span> score may indicate that the hero was a craftsman before starting his life of adventure. Some races, such as the Dwar ves and Noldor Elves, revere crafts as the highest expression of creativity.</div>
                     <div class="sheet-dots">
                         <input type="radio" name="attr_craft" value="0" checked="checked" /><span></span>
                         <input type="radio" name="attr_craft" value="1" /><span></span>
@@ -929,7 +929,7 @@
                     <button type="roll" value="/me @{translation_rolls_for} @{translation_battle} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{battle}t[@{weary}] > ?{@{translation_target_number}|14}" name="battlecheck"></button>
                     <input type="checkbox" name="attr_battle_favoured" value="1">
                     <span class='label' data-i18n="battle">Battle</span>
-                    <div class="sheet-hover-info" data-i18n="battle-description">A hero�s proficiency in this skill shows his grasp of the rules of battle, and his ability to keep his head when involved in a violent confrontation. The Battle skill can be used to gain an advantage when involved in a fight with a group of foes, or to lead a company of men in open battle and maintain order in the midst of chaos (combat itself is covered by Weapon skills).</div>
+                    <div class="sheet-hover-info" data-i18n="battle-description">A hero's proficiency in this skill shows his grasp of the rules of battle, and his ability to keep his head when involved in a violent confrontation. The <span class='sheet-strong'>Battle</span> skill can be used to gain an advantage when involved in a fight with a group of foes, or to lead a company of men in open battle and maintain order in the midst of chaos (combat itself is covered by Weapon skills).</div>
                     <div class="sheet-dots">
                         <input type="radio" name="attr_battle" value="0" checked="checked" /><span></span>
                         <input type="radio" name="attr_battle" value="1" /><span></span>
@@ -946,7 +946,7 @@
                     <button type="roll" value="/me @{translation_rolls_for} @{translation_lore} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{lore}t[@{weary}] > ?{@{translation_target_number}|14}" name="lorecheck"></button>
                     <input type="checkbox" name="attr_lore_favoured" value="1">
                     <span class='label' data-i18n="lore">Lore</span>
-                    <div class="sheet-hover-info" data-i18n="lore-description">Lore expresses a hero�s love for learning, be it a fascination with descriptions of distant lands, or an interest in family genealogy. Whenever an action involves knowledge of some kind, a Lore roll is required. Heroes are considered to be knowledgeable in the traditions of their own people, and so the Loremaster should rarely require a player to make a Lore test for information regarding their character�s culture, background or the area they originally come from.</div>
+                    <div class="sheet-hover-info" data-i18n="lore-description"><span class='sheet-strong'>Lore</span> expresses a hero's love for learning, be it a fascination with descriptions of distant lands, or an interest in family genealogy. Whenever an action involves knowledge of some kind, a <span class='sheet-strong'>Lore</span> roll is required. Heroes are considered to be knowledgeable in the traditions of their own people, and so the Loremaster should rarely require a player to make a <span class='sheet-strong'>Lore</span> test for information regarding their character's culture, background or the area they originally come from.</div>
                     <div class="sheet-dots">
                         <input type="radio" name="attr_lore" value="0" checked="checked" /><span></span>
                         <input type="radio" name="attr_lore" value="1" /><span></span>
@@ -978,11 +978,11 @@
 
         <table class="sheet-combat">
             <tr>
-                <td>
+                <td style="width: 66%;">
 
                     <h2 data-i18n="weapon-skills"> Weapon Skills</h2>
 
-                    <table class="sheet-weapon-skills">
+                    <table class="sheet-weapon-skills" style="width: 100%;">
                         <thead>
                             <tr>
                                 <td></td>
@@ -998,7 +998,7 @@
 
                         <tbody>
                             <tr>
-                                <td><button type="roll" value="/me @{translation_attacks_with_a} @{weapon_skill_name_1} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{weapon_rating_1}t[@{weary}] > ?{@{translation_target_number}|14}" name="weapon1check"></button></td>
+                                <td class="sheet-zero-padding"><button type="roll" value="/me @{translation_attacks_with_a} @{weapon_skill_name_1} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{weapon_rating_1}t[@{weary}] > ?{@{translation_target_number}|14}" name="weapon1check"></button></td>
                                 <td><input type="checkbox" name="attr_weapon_favoured_1" value="1"><input name="attr_weapon_skill_name_1" type="text"></td>
                                 <td><input name="attr_weapon_rating_1" value="0" class="center number" type="text"></td>
                                 <td><input name="attr_weapon_damage_1" value="0" class="center number" type="text"></td>
@@ -1009,7 +1009,7 @@
                             </tr>
 
                             <tr>
-                                <td><button type="roll" value="/me @{translation_attacks_with_a} @{weapon_skill_name_2} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{weapon_rating_2}t[@{weary}] > ?{@{translation_target_number}|14}" name="weapon2check"></button></td>
+                                <td class="sheet-zero-padding"><button type="roll" value="/me @{translation_attacks_with_a} @{weapon_skill_name_2} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{weapon_rating_2}t[@{weary}] > ?{@{translation_target_number}|14}" name="weapon2check"></button></td>
                                 <td><input type="checkbox" name="attr_weapon_favoured_2" value="1"><input name="attr_weapon_skill_name_2" type="text"></td>
                                 <td><input name="attr_weapon_rating_2" value="0" class="center number" type="text"></td>
                                 <td><input name="attr_weapon_damage_2" value="0" class="center number" type="text"></td>
@@ -1020,7 +1020,7 @@
                             </tr>
 
                             <tr>
-                                <td><button type="roll" value="/me @{translation_attacks_with_a} @{weapon_skill_name_3} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{weapon_rating_3}t[@{weary}] > ?{@{translation_target_number}|14}" name="weapon3check"></button></td>
+                                <td class="sheet-zero-padding"><button type="roll" value="/me @{translation_attacks_with_a} @{weapon_skill_name_3} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{weapon_rating_3}t[@{weary}] > ?{@{translation_target_number}|14}" name="weapon3check"></button></td>
                                 <td><input type="checkbox" name="attr_weapon_favoured_3" value="1"><input name="attr_weapon_skill_name_3" type="text"></td>
                                 <td><input name="attr_weapon_rating_3" value="0" class="center number" type="text"></td>
                                 <td><input name="attr_weapon_damage_3" value="0" class="center number" type="text"></td>
@@ -1031,7 +1031,7 @@
                             </tr>
 
                             <tr>
-                                <td><button type="roll" value="/me @{translation_attacks_with_a} @{weapon_skill_name_4} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{weapon_rating_4}t[@{weary}] > ?{@{translation_target_number}|14}" name="weapon4check"></button></td>
+                                <td class="sheet-zero-padding"><button type="roll" value="/me @{translation_attacks_with_a} @{weapon_skill_name_4} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{weapon_rating_4}t[@{weary}] > ?{@{translation_target_number}|14}" name="weapon4check"></button></td>
                                 <td><input type="checkbox" name="attr_weapon_favoured_4" value="1"><input name="attr_weapon_skill_name_4" type="text"></td>
                                 <td><input name="attr_weapon_rating_4" value="0" class="center number" type="text"></td>
                                 <td><input name="attr_weapon_damage_4" value="0" class="center number" type="text"></td>
@@ -1041,7 +1041,7 @@
                                 <td><input name="attr_weapon_encumbrance_4" value="0" class="center number" type="text"></td>
                             </tr>
                             <tr>
-                                <td><button type="roll" value="/me @{translation_attacks_with_a} @{weapon_skill_name_5} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{weapon_rating_5}t[@{weary}] > ?{@{translation_target_number}|14}" name="weapon5check"></button></td>
+                                <td class="sheet-zero-padding"><button type="roll" value="/me @{translation_attacks_with_a} @{weapon_skill_name_5} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{weapon_rating_5}t[@{weary}] > ?{@{translation_target_number}|14}" name="weapon5check"></button></td>
                                 <td><input type="checkbox" name="attr_weapon_favoured_5" value="1"><input name="attr_weapon_skill_name_5" type="text"></td>
                                 <td><input name="attr_weapon_rating_5" value="0" class="center number" type="text"></td>
                                 <td><input name="attr_weapon_damage_5" value="0" class="center number" type="text"></td>
@@ -1052,7 +1052,7 @@
                             </tr>
 
                             <tr>
-                                <td><button type="roll" value="/me @{translation_attacks_with_a} @{weapon_skill_name_6} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{weapon_rating_6}t[@{weary}] > ?{@{translation_target_number}|14}" name="weapon6check"></button></td>
+                                <td class="sheet-zero-padding"><button type="roll" value="/me @{translation_attacks_with_a} @{weapon_skill_name_6} @{translation_against_tn} ?{@{translation_target_number}|14}.\n/roll 1t[feat] + @{weapon_rating_6}t[@{weary}] > ?{@{translation_target_number}|14}" name="weapon6check"></button></td>
                                 <td><input type="checkbox" name="attr_weapon_favoured_6" value="1"><input name="attr_weapon_skill_name_6" type="text"></td>
                                 <td><input name="attr_weapon_rating_6" value="0" class="center number" type="text"></td>
                                 <td><input name="attr_weapon_damage_6" value="0" class="center number" type="text"></td>
@@ -1065,24 +1065,24 @@
                     </table>
 
                 </td>
-                <td>
+                <td style="padding-left: 10px;">
 
                     <h2 data-i18n="combat-values">Combat Values</h2>
 
-                    <table class="sheet-combat-values">
+                    <table class="sheet-combat-values" style="width: 100%;">
                         <tr>
                             <td>
 
                                 <table>
                                     <tr>
-                                        <td>
+                                        <td class="sheet-zero-padding sheet-center">
                                             <span class="label" data-i18n="damage">Damage</span>
                                             <input class="number" type="number" name="attr_damage" value="0">
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <td>
+                                        <td class="sheet-zero-padding sheet-center">
                                             <span class="label" data-i18n="ranged">Ranged</span>
                                             <input class="number" type="number" name="attr_ranged" value="0">
                                         </td>
@@ -1093,14 +1093,14 @@
 
                                 <table>
                                     <tr>
-                                        <td>
+                                        <td class="sheet-zero-padding sheet-center">
                                             <span class="label" data-i18n="parry">Parry</span>
                                             <input class="number" type="number" name="attr_parry" value="0">
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <td>
+                                        <td class="sheet-zero-padding sheet-center">
                                             <span class="label" data-i18n="shield">Shield</span>
                                             <input class="number" type="number" name="attr_shield" value="0">
                                         </td>
@@ -1111,7 +1111,7 @@
 
                                 <table>
                                     <tr>
-                                        <td class="sheet-armour-container">
+                                        <td class="sheet-armour-container sheet-zero-padding sheet-center">
                                             <span class="label" data-i18n="armour">Armour</span>
                                             <input class="number" type="number" name="attr_armour" value="0">
                                             <button type="roll" value="/me @{translation_rolls_for} @{translation_armour} @{translation_against_tn} ?{@{translation_injury}|14}.\n/roll 1t[feat] + @{armour}t[@{weary}] + @{head-gear} > ?{@{translation_injury}|14}" name="armourcheck"></button>
@@ -1119,7 +1119,7 @@
                                     </tr>
 
                                     <tr>
-                                        <td>
+                                        <td class="sheet-zero-padding sheet-center">
                                             <span class="label" data-i18n="head-gear">Head Gear</span>
                                             <input class="number" type="number" name="attr_head-gear" value="0">
                                         </td>
@@ -1140,7 +1140,7 @@
 
                     <h2 data-i18n="mount">Mount</h2>
 
-                    <table class="sheet-weapon-skills">
+                    <table class="sheet-weapon-skills" style="width: 100%;">
                         <thead>
                             <tr>
 								<td></td>
@@ -1188,7 +1188,7 @@
 
         <h2 data-i18n="gear">Gear</h2>
 
-            <table style="width: 100%;" class="sheet-gear-list">
+            <table style="width: 98%;margin-left: auto;margin-right: auto;" class="sheet-gear-list">
                 <thead>
                     <tr>
                         <td><span class="label" data-i18n="description">Description</span></td>
@@ -1222,15 +1222,21 @@
                         <td class="sheet-gear-name"><input type="text" name="attr_gear_name_8"></td>
                         <td class="sheet-gear-enc"><input type="number"name="attr_gear_encumbrance_8" value="0"></td>
                     </tr>
+                    <tr>
+                        <td class="sheet-gear-name"><input type="text" name="attr_gear_name_9"></td>
+                        <td class="sheet-gear-enc"><input type="number"name="attr_gear_encumbrance_9" value="0"></td>
+                        <td class="sheet-gear-name"><input type="text" name="attr_gear_name_10"></td>
+                        <td class="sheet-gear-enc"><input type="number"name="attr_gear_encumbrance_10" value="0"></td>
+                    </tr>
                 </tbody>
             </table>
 
 
-        <div class="sheet-3colrow">
+        <div style="width: 98% ; margin-left: auto ; margin-right: auto">
 
             <h2 data-i18n="character-states">Character States</h2>
 
-            <div class="sheet-endurance sheet-col">
+            <div class="sheet-endurance">
                 <table>
                     <tr>
                         <td><span class="label" data-i18n="endurance">Endurance</span></td>
@@ -1245,7 +1251,7 @@
 
                     <tr>
                         <td><span class="label" data-i18n="encumbrance-fatigue">Enc. Fatigue</span></td>
-                        <td colspan="2"><input type="number" name="attr_encumbrance_fatigue" disabled="true" value="@{gear_encumbrance_1} + @{gear_encumbrance_2} + @{gear_encumbrance_3} + @{gear_encumbrance_4} + @{gear_encumbrance_5} + @{gear_encumbrance_6} + @{gear_encumbrance_7} + @{gear_encumbrance_8} + @{weapon_encumbrance_1} + @{weapon_encumbrance_2} + @{weapon_encumbrance_3} + @{weapon_encumbrance_4}"></td>
+                        <td colspan="2"><input type="number" name="attr_encumbrance_fatigue" disabled="true" value="@{gear_encumbrance_1} + @{gear_encumbrance_2} + @{gear_encumbrance_3} + @{gear_encumbrance_4} + @{gear_encumbrance_5} + @{gear_encumbrance_6} + @{gear_encumbrance_7} + @{gear_encumbrance_8} + @{gear_encumbrance_9} + @{gear_encumbrance_10} + @{weapon_encumbrance_1} + @{weapon_encumbrance_2} + @{weapon_encumbrance_3} + @{weapon_encumbrance_4} + @{weapon_encumbrance_5} + @{weapon_encumbrance_6}"></td>
                     </tr>
 
                     <tr>
@@ -1255,7 +1261,7 @@
                 </table>
             </div>
 
-            <div class="sheet-hope sheet-col">
+            <div class="sheet-hope">
                 <table>
                     <tr>
                         <td><span class="label" data-i18n="hope">Hope</span></td>
@@ -1280,7 +1286,7 @@
                 </table>
             </div>
 
-            <div class="sheet-armour sheet-col">
+            <div class="sheet-armour">
                 <table>
                     <tr>
                         <td>

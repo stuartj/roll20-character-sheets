@@ -1,11 +1,18 @@
 @font-face {
     font-family: "dum1";
-    src: url("https://github.com/stuartj/roll20-character-sheets/raw/master/Der%20Eine%20Ring/assets/fonts/dum1.ttf");
+    src: url("https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/Der%20Eine%20Ring/assets/fonts/dum1.ttf");
 }
 
 * {
     font-family: dum1, "Dumbledor 1", "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: normal;
+}
+
+.sheet-strong {
+    font-weight: bold;
+}
+.sheet-zero-padding {
+    padding: 0px !important;
 }
 
 .charsheet {
@@ -28,8 +35,8 @@
 }
 
 .sheet-pc-wrapper {
-    margin-left:-175px;
-    margin-right:-175px;
+    margin-left:-189px;
+    margin-right:-180px;
 }
 
 .sheet-npc,
@@ -48,7 +55,7 @@
     text-align: center;
     margin-top: -175px;
     margin-bottom: 30px;
-    height: 180px;
+    height: 145px;
     background-image: url('https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/Der%20Eine%20Ring/assets/images/logo-eng.png');
     background-repeat: no-repeat;
     background-position: center center;
@@ -71,6 +78,10 @@ label {
     display: inline !important;
     line-height: 26px;
     padding: 0 !important;
+}
+
+.charsheet .sheet-pod {
+    width: 25%;
 }
 
 .sheet-pod,
@@ -155,12 +166,18 @@ input[type="checkbox"]:checked + span {
     text-decoration: underline;
 }
 
+.sheet-endurance, .sheet-hope, .sheet-armour {
+    display: inline-block;
+}
+.sheet-endurance, .sheet-hope {
+    width: 38%;
+}
+.sheet-armour {
+    width: 23%;
+}
 
 .sheet-4colrow .sheet-col {
     width: 24%;
-}
-
-.sheet-3colrow {
 }
 
 .sheet-2colrow {
@@ -186,7 +203,6 @@ td {
 }
 
 td.sheet-small {
-    width: 1%;
     white-space: nowrap;
 }
 
@@ -226,7 +242,7 @@ textarea {
 .sheet-attribute-favoured span.sheet-label {
     position: relative;
     top: -16px;
-    right: -12px;
+    right: -4px;
     text-align: right;
     width: 70px;
     display: inline-block;
@@ -251,7 +267,11 @@ textarea {
 
 .sheet-group-attrs-skills td {
     position: relative;
-    padding: 1px 10px;
+    padding: 1px;
+}
+.sheet-group-attrs-skills.sheet-horizontal-pad td {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .sheet-group-attrs-skills input[type=checkbox] {
@@ -286,6 +306,10 @@ textarea {
 
 .sheet-nowrap {
     white-space: nowrap;
+}
+
+.sheet-weapon-skills tr td:nth-of-type(2) ~ td {
+    text-align: center;
 }
 
 .sheet-weapon-skills tr td:nth-child(2) input {
@@ -361,7 +385,7 @@ textarea {
 }
 
 .sheet-weapon-skills tbody td {
-    padding: 0 5px;
+    padding: 0 3px;
 }
 
 .sheet-weapon-skills .sheet-number {
@@ -472,6 +496,10 @@ td.sheet-attr-skill-group {
     top: 2px;
     right: 0;
 }
+/* move  skill 'dots' to left closer to skill name for English */
+.lang-en .sheet-dots {
+    right: 20px;
+}
 
 .sheet-dots input[type="radio"] + span {
     display: inline-block;
@@ -517,6 +545,11 @@ td.sheet-attr-skill-group {
     opacity: 1;
 }
 
+.sheet-attr-skill-group span.sheet-label {
+    top: 1px;
+    position: absolute;
+}
+
 .sheet-attr-skill-group .sheet-dots input[type='radio'] + span {
     height: 12px;
     width: 12px;
@@ -539,11 +572,15 @@ td.sheet-attr-skill-group {
     background: white;
     z-index: 10;
     padding: 20px;
-    width: 200px;
+    width: 300px;
     visibility: hidden;
     opacity: 0;
     box-shadow: 0 3px 15px rgba(0,0,0,.1);
     transition:visibility 0s linear 0.3s, opacity 0.3s linear;
+    text-align: left;
+}
+.sheet-hover-info.sheet-margin-left-140px {
+    margin-left: -140px;
 }
 
 span.label:hover + .sheet-hover-info,
@@ -555,12 +592,11 @@ input:hover + span.sheet-label + .sheet-hover-info {
 }
 
 .sheet-attr-skill-group .sheet-hover-info  {
-    margin-left: -100px;
+    margin-left: -140px;
 }
 
-.sheet-valour .sheet-hover-info,
-.sheet-wisdom  .sheet-hover-info {
-    margin-left: -65px;
+.sheet-rating-wrapper .sheet-hover-info {
+    margin-left: -200px;
 }
 
 .sheet-attr-skill-wrapper .sheet-hover-info {
@@ -598,11 +634,6 @@ tr.sheet-attr-group-skills td.sheet-attr-skill-wrapper button[type=roll] {
     margin-right: 0px;
 }
 
-/* move button and skill names closer to skill 'dots' for English */
-.lang-en tr.sheet-attr-group-skills td.sheet-attr-skill-wrapper button[type=roll] {
-    margin-left: 20px;
-}
-
 .sheet-pc input, .sheet-pc textarea {
     font-size: 16px;
     color: black;
@@ -610,7 +641,6 @@ tr.sheet-attr-group-skills td.sheet-attr-skill-wrapper button[type=roll] {
 
 .sheet-pc input[type=text] {
     padding-bottom: 1px;
-    margin-left: 5px;
 }
 
 
@@ -622,13 +652,17 @@ tr.sheet-attr-group-skills td.sheet-attr-skill-wrapper button[type=roll] {
 /* WIP - trying to move experience/valour etc. */
 
 td#sheet-upper-right-section {
-	padding-left: 45px;
+	padding-left: 25px;
 	vertical-align: top;
 }
 
 .sheet-rating-wrapper {
-	width:90px;
+	width:100px;
 	height:105px;
+	text-align: center;
+	position: relative;
+	float: right;
+	clear: both;
 }
 
 .sheet-rating-wrapper span.sheet-label {
@@ -649,7 +683,7 @@ td#sheet-upper-right-section {
 	width:50px;
 	height:50px;
 	top:-68px;
-	left:13px;
+	left:15px;
 	position: relative;
 	z-index: 1;
 	font-size:32px;
@@ -662,12 +696,14 @@ td#sheet-upper-right-section {
 
 input#sheet-xp-spent {
     font-size: 22px;
+    margin-left: -29px;
 }
 
 input#sheet-xp-input {
     font-size: 15px;
-    padding-bottom: 2px;
-    margin-left: 2px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
 }
 
 .sheet-rating-wrapper .sheet-nw-sub-rating {
