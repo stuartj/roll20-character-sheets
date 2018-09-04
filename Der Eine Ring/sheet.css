@@ -599,7 +599,7 @@ span.sheet-label:hover + .sheet-hover-info,
 input:hover + span.sheet-label + .sheet-hover-info {
     visibility: visible;
     opacity: 1;
-    transition-delay: 0s;
+    transition-delay: 1s;
 }
 
 .sheet-attr-skill-group .sheet-hover-info  {
