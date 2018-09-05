@@ -7,8 +7,8 @@
 <div class="sheet-main sheet-npc sheet-adversary">
     <table>
         <tr>
-            <td class="sheet-center sheet-"><label data-i18n="attribute-level">Attribute Level</label></td>
-            <td class="sheet-center sheet-"><label data-i18n="weary-state">Weary State</label></td>
+            <td class="sheet-center"><label data-i18n="attribute-level">Attribute Level</label></td>
+            <td class="sheet-center"><label data-i18n="weary-state">Weary State</label></td>
         </tr>
         <tr>
             <td class="sheet-center">
@@ -232,14 +232,14 @@
 <div class="sheet-main sheet-npc sheet-lm-character">
     <table>
         <tr>
-            <td class="sheet-center sheet-"><label data-i18n="attribute-level">Attribute Level</label></td>
-            <td class="sheet-center sheet-"><label data-i18n="weary-state">Weary State</label></td>
+            <td class="sheet-center sheet-width-50"><label data-i18n="attribute-level">Attribute Level</label></td>
+            <td class="sheet-center sheet-width-50"><label data-i18n="weary-state">Weary State</label></td>
         </tr>
         <tr>
-            <td class="sheet-center">
+            <td class="sheet-center sheet-width-50">
                 <input type="number" name="attr_attribute_level" style="text-align: center;" value="0">
             </td>
-            <td class="sheet-center">
+            <td class="sheet-center sheet-width-50">
                 <select name="attr_weary">
                     <option value="normal" data-i18n="weary-normal">Not Weary</option>
                     <option value="weary" data-i18n="weary-weary">Weary</option>
@@ -251,29 +251,29 @@
             <td colspan="2">
                 <table class="wide">
                     <tr>
-                        <td class="sheet-center"><label data-i18n="endurance">Endurance</label></td>
-                        <td class="sheet-center"><label data-i18n="hope">Hope</label></td>
+                        <td class="sheet-center sheet-width-50"><label data-i18n="endurance">Endurance</label></td>
+                        <td class="sheet-center sheet-width-50"><label data-i18n="hope">Hope</label></td>
                     </tr>
                     <tr>
-                        <td class="sheet-center">
+                        <td class="sheet-center sheet-width-50">
                             <input type="number" value="0" name="attr_endurance">&nbsp;/&nbsp;
                             <input type="number" value="0" name="attr_endurance_max">
                         </td>
-                        <td class="sheet-center">
+                        <td class="sheet-center sheet-width-50">
                             <input type="number" value="0" name="attr_hope">&nbsp;/&nbsp;
                             <input type="number" value="0" name="attr_hope_max">
                         </td>
                     </tr>
                     <tr>
-                        <td class="sheet-center"><label data-i18n="parry-and-shield">Parry &amp; Shield</label></td>
-                        <td class="sheet-center"><label data-i18n="armour">Armour</label></td>
+                        <td class="sheet-center sheet-width-50"><label data-i18n="parry-and-shield">Parry &amp; Shield</label></td>
+                        <td class="sheet-center sheet-width-50"><label data-i18n="armour">Armour</label></td>
                     </tr>
                     <tr>
-                        <td class="sheet-center">
+                        <td class="sheet-center sheet-width-50">
                             <input type="number" value="0" name="attr_parry">&nbsp;+&nbsp;
                             <input type="number" value="0" name="attr_shield">
                         </td>
-                        <td class="sheet-center">
+                        <td class="sheet-center sheet-width-50  ">
                             <button type="roll" value="/me @{translation_rolls_for} @{translation_armour} @{translation_against_tn} ?{@{translation_injury}|14}.\n/roll 1t[feat] + @{armour}t[@{weary}] + @{head-gear} + [[@{armour_favoured} * @{attribute_level}]] > ?{@{translation_injury}|14}" name="armourcheck"></button>
                             <input type="checkbox" name="attr_armour_favoured" value="1">
                             <input type="number" value="0" name="attr_armour">&nbsp;+&nbsp;
@@ -283,14 +283,20 @@
                 </table>
             </td>
         </tr>
-
+        <tr style="height: 30px;"></tr>
         <tr>
-            <td class="sheet-small"><label data-i18n="specialities">Specialities</label></td>
-            <td colspan="3"><input type="text" name="attr_specialities" style="width: 100%;"></td>
-        </tr>
-        <tr>
-            <td class="sheet-small"><label data-i18n="distinctive-features">Distinctive Features</label></td>
-            <td colspan="3"><input type="text" name="attr_distinctive_features" style="width: 100%;"></td>
+            <td colspan="2">
+                <table class="wide">
+                    <tr>
+                        <td class="sheet-small" style="padding-right: 20px; padding-left: 10px;"><label data-i18n="specialities">Specialities</label></td>
+                        <td><input type="text" name="attr_specialities" style="width: 100%;"></td>
+                    </tr>
+                    <tr>
+                        <td class="sheet-small" style="padding-right: 20px; padding-left: 10px;"><label data-i18n="distinctive-features">Distinctive Features</label></td>
+                        <td><input type="text" name="attr_distinctive_features" style="width: 100%;"></td>
+                    </tr>
+                </table>
+            </td>
         </tr>
 
         <tr>
@@ -344,7 +350,7 @@
         </tr>
         <tr>
             <td colspan="2">
-                    <table class="sheet-weapon-skills">
+                    <table class="sheet-weapon-skills sheet-wide">
                         <thead>
                             <tr>
                                 <td></td>
@@ -1444,7 +1450,7 @@
         <fieldset class="repeating_years">
             <table class="sheet-wide-PC">
                 <tr>
-                    <td style="width: 20%"><input type="text" name="attr_year"></td>
+                    <td style="padding-right: 20px;width: 65px;"><input type="text" name="attr_year" style="width: 100%;"></td>
                     <td><input type="text" name="attr_event" style="width: 100%;"></td>
                 </tr>
             </table>

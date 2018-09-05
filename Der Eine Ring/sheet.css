@@ -401,10 +401,6 @@ textarea {
     width: 30px !important;
 }
 
-[name*='attr_weapon_skill_name'] {
-    width: 160px !important;
-}
-
 [name*='attr_weapon_called_shot'] {
     width: 100px !important;
 }
@@ -430,6 +426,10 @@ textarea {
 .sheet-isNPC:checked~.sheet-adversary,
 .sheet-isNPC:checked~.sheet-pc {
     display: none;
+}
+
+td.sheet-width-50 {
+    width: 50%;
 }
 
 .sheet-isNPC {
@@ -479,6 +479,17 @@ textarea {
 .sheet-npc label.sheet-called-shot {
     width: 100px;
 }
+
+.sheet-npc .sheet-weapon-skills tr td:last-child {
+    text-align: left;
+}
+.sheet-npc [name*='attr_weapon_skill_name'] {
+    width: 200px !important;
+}
+
+/*.sheet-npc [name*='attr_weapon_called_shot'] {
+    width: 100px !important;
+}*/
 
 
 /*
