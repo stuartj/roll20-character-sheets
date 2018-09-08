@@ -5,16 +5,16 @@
 <hr>
 
 <div class="sheet-main sheet-npc sheet-adversary">
-    <table>
+    <table class="sheet-wide">
         <tr>
-            <td class="sheet-center"><label data-i18n="attribute-level">Attribute Level</label></td>
-            <td class="sheet-center"><label data-i18n="weary-state">Weary State</label></td>
+            <td class="sheet-center sheet-width-50"><label data-i18n="attribute-level">Attribute Level</label></td>
+            <td class="sheet-center sheet-width-50"><label data-i18n="weary-state">Weary State</label></td>
         </tr>
         <tr>
-            <td class="sheet-center">
+            <td class="sheet-center sheet-width-50">
                 <input type="number" name="attr_attribute_level" style="text-align: center;" value="0">
             </td>
-            <td class="sheet-center">
+            <td class="sheet-center sheet-width-50">
                 <select name="attr_weary">
                     <option value="normal" data-i18n="weary-normal">Not Weary</option>
                     <option value="weary" data-i18n="weary-weary">Weary</option>
@@ -26,29 +26,29 @@
             <td colspan="2">
                 <table class="wide">
                     <tr>
-                        <td class="sheet-center"><label data-i18n="endurance">Endurance</label></td>
-                        <td class="sheet-center"><label data-i18n="hate">Hate</label></td>
+                        <td class="sheet-center sheet-width-50"><label data-i18n="endurance">Endurance</label></td>
+                        <td class="sheet-center sheet-width-50"><label data-i18n="hate">Hate</label></td>
                     </tr>
                     <tr>
-                        <td class="sheet-center">
+                        <td class="sheet-center sheet-width-50">
                             <input type="number" value="0" name="attr_endurance">&nbsp;/&nbsp;
                             <input type="number" value="0" name="attr_endurance_max">
                         </td>
-                        <td class="sheet-center">
+                        <td class="sheet-center sheet-width-50">
                             <input type="number" value="0" name="attr_hate">&nbsp;/&nbsp;
                             <input type="number" value="0" name="attr_hate_max">
                         </td>
                     </tr>
                     <tr>
-                        <td class="sheet-center"><label data-i18n="parry-and-shield">Parry &amp; Shield</label></td>
-                        <td class="sheet-center"><label data-i18n="armour">Armour</label></td>
+                        <td class="sheet-center sheet-width-50"><label data-i18n="parry-and-shield">Parry &amp; Shield</label></td>
+                        <td class="sheet-center sheet-width-50"><label data-i18n="armour">Armour</label></td>
                     </tr>
                     <tr>
-                        <td class="sheet-center">
+                        <td class="sheet-center sheet-width-50">
                             <input type="number" value="0" name="attr_parry">&nbsp;+&nbsp;
                             <input type="number" value="0" name="attr_shield">
                         </td>
-                        <td class="sheet-center">
+                        <td class="sheet-center sheet-width-50">
                             <button type="roll" value="/me @{translation_rolls_for} @{translation_armour} @{translation_against_tn} ?{@{translation_injury}|14}.\n/roll 1t[lm-feat] + @{armour}t[@{weary}] + @{head-gear} + [[@{armour_favoured} * @{attribute_level}]] > ?{@{translation_injury}|14}" name="armourcheck"></button>
                             <input type="checkbox" name="attr_armour_favoured" value="1">
                             <input type="number" value="0" name="attr_armour" value="0">&nbsp;+&nbsp;
@@ -66,7 +66,7 @@
         </tr>
 
         <tr class="sheet-group-attrs-skills sheet-horizontal-pad">
-            <td colspan="2">
+            <td colspan="2" style="padding: 0 50px;">
                 <table class="wide">
                     <tr>
                         <td>
@@ -139,7 +139,7 @@
 
         <tr>
             <td colspan="2">
-                    <table class="sheet-weapon-skills">
+                    <table class="sheet-weapon-skills sheet-wide">
                         <thead>
                             <tr>
                                 <td></td>
@@ -223,14 +223,14 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2"><textarea name="attr_abilities"></textarea></td>
+            <td colspan="2" style="padding-left: 10px;"><textarea name="attr_abilities"></textarea></td>
         </tr>
 
     </table>
 </div>
 
 <div class="sheet-main sheet-npc sheet-lm-character">
-    <table>
+    <table class="sheet-wide">
         <tr>
             <td class="sheet-center sheet-width-50"><label data-i18n="attribute-level">Attribute Level</label></td>
             <td class="sheet-center sheet-width-50"><label data-i18n="weary-state">Weary State</label></td>
@@ -288,7 +288,7 @@
             <td colspan="2">
                 <table class="wide">
                     <tr>
-                        <td class="sheet-small" style="padding-right: 20px; padding-left: 10px;"><label data-i18n="specialities">Specialities</label></td>
+                        <td class="sheet-small" style="padding-right: 20px; padding-left: 10px; width: 33%"><label data-i18n="specialities">Specialities</label></td>
                         <td><input type="text" name="attr_specialities" style="width: 100%;"></td>
                     </tr>
                     <tr>
