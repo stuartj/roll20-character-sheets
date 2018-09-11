@@ -1198,41 +1198,41 @@
                 <thead>
                     <tr>
                         <td><span class="label" data-i18n="description">Description</span></td>
-                        <td style="width: 1%"><span class="label" data-i18n="encumbrance-abbreviation">Enc</span></td>
+                        <td style="width: 1%" class="sheet-center"><span class="label" data-i18n="encumbrance-abbreviation">Enc</span></td>
                         <td><span class="label" data-i18n="description">Description</span></td>
-                        <td style="width: 1%"><span class="label" data-i18n="encumbrance-abbreviation">Enc</span></td>
+                        <td style="width: 1%" class="sheet-center"><span class="label" data-i18n="encumbrance-abbreviation">Enc</span></td>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td class="sheet-gear-name"><input type="text" name="attr_gear_name_1"></td>
-                        <td class="sheet-gear-enc"><input type="number" name="attr_gear_encumbrance_1" value="0"></td>
+                        <td class="sheet-gear-enc"><input type="number" name="attr_gear_encumbrance_1" value="0" class="sheet-center"></td>
                         <td class="sheet-gear-name"><input type="text" name="attr_gear_name_2"></td>
-                        <td class="sheet-gear-enc"><input type="number" name="attr_gear_encumbrance_2" value="0"></td>
+                        <td class="sheet-gear-enc"><input type="number" name="attr_gear_encumbrance_2" value="0" class="sheet-center"></td>
                     </tr>
                     <tr>
                         <td class="sheet-gear-name"><input type="text" name="attr_gear_name_3"></td>
-                        <td class="sheet-gear-enc"><input type="number" name="attr_gear_encumbrance_3" value="0"></td>
+                        <td class="sheet-gear-enc"><input type="number" name="attr_gear_encumbrance_3" value="0" class="sheet-center"></td>
                         <td class="sheet-gear-name"><input type="text" name="attr_gear_name_4"></td>
-                        <td class="sheet-gear-enc"><input type="number" name="attr_gear_encumbrance_4" value="0"></td>
+                        <td class="sheet-gear-enc"><input type="number" name="attr_gear_encumbrance_4" value="0" class="sheet-center"></td>
                     </tr>
                     <tr>
                         <td class="sheet-gear-name"><input type="text" name="attr_gear_name_5"></td>
-                        <td class="sheet-gear-enc"><input type="number"name="attr_gear_encumbrance_5" value="0"></td>
+                        <td class="sheet-gear-enc"><input type="number"name="attr_gear_encumbrance_5" value="0" class="sheet-center"></td>
                         <td class="sheet-gear-name"><input type="text" name="attr_gear_name_6"></td>
-                        <td class="sheet-gear-enc"><input type="number"name="attr_gear_encumbrance_6" value="0"></td>
+                        <td class="sheet-gear-enc"><input type="number"name="attr_gear_encumbrance_6" value="0" class="sheet-center"></td>
                     </tr>
                     <tr>
                         <td class="sheet-gear-name"><input type="text" name="attr_gear_name_7"></td>
-                        <td class="sheet-gear-enc"><input type="number"name="attr_gear_encumbrance_7" value="0"></td>
+                        <td class="sheet-gear-enc"><input type="number"name="attr_gear_encumbrance_7" value="0" class="sheet-center"></td>
                         <td class="sheet-gear-name"><input type="text" name="attr_gear_name_8"></td>
-                        <td class="sheet-gear-enc"><input type="number"name="attr_gear_encumbrance_8" value="0"></td>
+                        <td class="sheet-gear-enc"><input type="number"name="attr_gear_encumbrance_8" value="0" class="sheet-center"></td>
                     </tr>
                     <tr>
                         <td class="sheet-gear-name"><input type="text" name="attr_gear_name_9"></td>
-                        <td class="sheet-gear-enc"><input type="number"name="attr_gear_encumbrance_9" value="0"></td>
+                        <td class="sheet-gear-enc"><input type="number"name="attr_gear_encumbrance_9" value="0" class="sheet-center"></td>
                         <td class="sheet-gear-name"><input type="text" name="attr_gear_name_10"></td>
-                        <td class="sheet-gear-enc"><input type="number"name="attr_gear_encumbrance_10" value="0"></td>
+                        <td class="sheet-gear-enc"><input type="number"name="attr_gear_encumbrance_10" value="0" class="sheet-center"></td>
                     </tr>
                 </tbody>
             </table>
@@ -1246,23 +1246,23 @@
                 <table>
                     <tr>
                         <td><span class="label" data-i18n="endurance">Endurance</span></td>
-                        <td class="sheet-nowrap"><input type="number" name="attr_endurance" value="0">&nbsp;/&nbsp;</td>
-                        <td><input type="number" name="attr_endurance_max" value="0"></td>
+                        <td class="sheet-nowrap"><input type="number" name="attr_endurance" value="0" class="sheet-center">&nbsp;/&nbsp;</td>
+                        <td><input type="number" name="attr_endurance_max" value="0" class="sheet-center"></td>
                     </tr>
 
                     <tr>
                         <td><span class="label" data-i18n="total-fatigue">Total Fatigue</span></td>
-                        <td colspan="2"><input type="number" name="attr_total_fatigue" value="@{encumbrance_fatigue}+@{travel_fatigue}" disabled="true"></td>
+                        <td colspan="2"><input type="number" name="attr_total_fatigue" class="sheet-center" value="@{encumbrance_fatigue}+@{travel_fatigue}" disabled="true"></td>
                     </tr>
 
                     <tr>
                         <td><span class="label" data-i18n="encumbrance-fatigue">Enc. Fatigue</span></td>
-                        <td colspan="2"><input type="number" name="attr_encumbrance_fatigue" disabled="true" value="@{gear_encumbrance_1} + @{gear_encumbrance_2} + @{gear_encumbrance_3} + @{gear_encumbrance_4} + @{gear_encumbrance_5} + @{gear_encumbrance_6} + @{gear_encumbrance_7} + @{gear_encumbrance_8} + @{gear_encumbrance_9} + @{gear_encumbrance_10} + @{weapon_encumbrance_1} + @{weapon_encumbrance_2} + @{weapon_encumbrance_3} + @{weapon_encumbrance_4} + @{weapon_encumbrance_5} + @{weapon_encumbrance_6}"></td>
+                        <td colspan="2"><input type="number" name="attr_encumbrance_fatigue" disabled="true" class="sheet-center" value="@{gear_encumbrance_1} + @{gear_encumbrance_2} + @{gear_encumbrance_3} + @{gear_encumbrance_4} + @{gear_encumbrance_5} + @{gear_encumbrance_6} + @{gear_encumbrance_7} + @{gear_encumbrance_8} + @{gear_encumbrance_9} + @{gear_encumbrance_10} + @{weapon_encumbrance_1} + @{weapon_encumbrance_2} + @{weapon_encumbrance_3} + @{weapon_encumbrance_4} + @{weapon_encumbrance_5} + @{weapon_encumbrance_6}"></td>
                     </tr>
 
                     <tr>
                         <td><span class="label" data-i18n="travel-fatigue">Travel Fatigue</span></td>
-                        <td colspan="2"><input type="number" name="attr_travel_fatigue" value="0"></td>
+                        <td colspan="2"><input type="number" name="attr_travel_fatigue" value="0" class="sheet-center"></td>
                     </tr>
                 </table>
             </div>
@@ -1271,23 +1271,23 @@
                 <table>
                     <tr>
                         <td><span class="label" data-i18n="hope">Hope</span></td>
-                        <td class="sheet-nowrap"><input type="number" name="attr_hope" value="0">&nbsp;/&nbsp;</td>
-                        <td><input type="number" name="attr_hope_max" value="0"></td>
+                        <td class="sheet-nowrap"><input type="number" name="attr_hope" value="0" class="sheet-center">&nbsp;/&nbsp;</td>
+                        <td><input type="number" name="attr_hope_max" value="0" class="sheet-center"></td>
                     </tr>
 
                     <tr>
                         <td><span class="label" data-i18n="total-shadow">Total Shadow</span></td>
-                        <td colspan="2"><input type="number" name="attr_total_shadow" value="@{permanent_shadow}+@{temporary_shadow}" disabled="true"></td>
+                        <td colspan="2"><input type="number" name="attr_total_shadow" class="sheet-center" value="@{permanent_shadow}+@{temporary_shadow}" disabled="true"></td>
                     </tr>
 
                     <tr>
                         <td><span class="label" data-i18n="temporal-shadow">Temp. Shadow</span></td>
-                        <td colspan="2"><input type="number" name="attr_temporary_shadow" value="0"></td>
+                        <td colspan="2"><input type="number" name="attr_temporary_shadow" value="0" class="sheet-center"></td>
                     </tr>
 
                     <tr>
                         <td><span class="label" data-i18n="permanent-shadow">Perm. Shadow</span></td>
-                        <td colspan="2"><input type="number" name="attr_permanent_shadow" value="0"></td>
+                        <td colspan="2"><input type="number" name="attr_permanent_shadow" value="0" class="sheet-center"></td>
                     </tr>
                 </table>
             </div>
@@ -1359,22 +1359,22 @@
             <tr>
                 <td class="sheet-pod">
                     <span class="label" data-i18n="fellowship-pool">Fellowship Pool</span><br>
-                    <input type="number" name="attr_fellowship" value="0">
+                    <input type="number" name="attr_fellowship" value="0" class="sheet-center">
                 </td>
 
                 <td class="sheet-pod">
                     <span class="label" data-i18n="advancement-points">Advancement Points</span><br>
-                    <input type="number" name="attr_advancement_points" value="0">
+                    <input type="number" name="attr_advancement_points" value="0" class="sheet-center">
                 </td>
 
                 <td class="sheet-pod">
                     <span class="label" data-i18n="treasure">Treasure</span><br>
-                    <input type="number" name="attr_treasure" value="0">
+                    <input type="number" name="attr_treasure" value="0" class="sheet-center">
                 </td>
 
                 <td class="sheet-pod">
                     <span class="label" data-i18n="standing">Standing</span><br>
-                    <input type="number" name="attr_standing" value="0">
+                    <input type="number" name="attr_standing" value="0" class="sheet-center">
                 </td>
             </tr>
         </table>
@@ -1441,7 +1441,7 @@
 
         <table class="sheet-wide-PC">
             <tr>
-                <td style="width: 20%"><span class="label" data-i18n="year">Year</span></td>
+                <td style="padding-right: 20px ; width: 65px" class="sheet-center"><span class="label" data-i18n="year">Year</span></td>
                 <td><span class="label" data-i18n="event-description">Event Description</span></td>
             </tr>
         </table>
@@ -1450,7 +1450,7 @@
         <fieldset class="repeating_years">
             <table class="sheet-wide-PC">
                 <tr>
-                    <td style="padding-right: 20px;width: 65px;"><input type="text" name="attr_year" style="width: 100%;"></td>
+                    <td style="padding-right: 20px;width: 65px;"><input type="text" name="attr_year" style="width: 100%;" class="sheet-center"></td>
                     <td><input type="text" name="attr_event" style="width: 100%;"></td>
                 </tr>
             </table>

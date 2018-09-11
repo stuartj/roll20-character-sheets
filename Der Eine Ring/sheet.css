@@ -84,6 +84,10 @@ label {
     width: 25%;
 }
 
+.lang-de .sheet-pc-wrapper {
+    min-width: 880px;
+}
+
 .sheet-pod,
 .sheet-pod label {
     text-align: center !important;
@@ -708,7 +712,7 @@ td#sheet-upper-right-section {
 	left:15px;
 	position: relative;
 	z-index: 1;
-	font-size:32px;
+	font-size:22px;
 	text-align: center;
 	border:none;
 	background-color: transparent;
@@ -725,13 +729,14 @@ input#sheet-xp-input {
     font-size: 15px;
     position: absolute;
     top: 30px;
-    left: 10px;
+    left: 8px;
+    padding-bottom: 4px;
 }
 
 .sheet-rating-wrapper .sheet-nw-sub-rating {
   border-radius: 100%;
   background: url('https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/Der%20Eine%20Ring/assets/images/parchment.jpg') !important;
-  width: 33px;
+  width: 34px;
   height: 28px;
   border: 2px solid black;
   font-size:16px;
