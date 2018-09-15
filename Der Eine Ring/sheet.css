@@ -180,11 +180,14 @@ input[type="checkbox"]:checked + span {
     padding-right: 5px;
 }
 
-.sheet-endurance, .sheet-hope {
+.sheet-endurance {
+    width: 41%;
+}
+.sheet-hope {
     width: 38%;
 }
 .sheet-armour {
-    width: 23%;
+    width: 20%;
 }
 
 .sheet-4colrow .sheet-col {
