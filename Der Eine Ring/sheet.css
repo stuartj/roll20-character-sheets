@@ -1,10 +1,5 @@
-@font-face {
-    font-family: "dum1";
-    src: url("https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/Der%20Eine%20Ring/assets/fonts/dum1.ttf");
-}
-
 * {
-    font-family: dum1, "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif, sans-serif;
     font-weight: normal;
 }
 
