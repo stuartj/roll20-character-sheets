@@ -43,7 +43,7 @@
     min-width: 500px;
     background:url('https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/Der%20Eine%20Ring/assets/images/parchment.jpg');
     border:250px solid transparent;
-	border-image:url('https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/Der%20Eine%20Ring/assets/images/character_sheet_frame.png') 457 repeat;
+	border-image:url('https://raw.githubusercontent.com/stuartj/roll20-character-sheets/master/Der%20Eine%20Ring/assets/images/character_sheet_frame-65pourcent.png') 305 repeat;
 }
 
 .sheet-logo {
