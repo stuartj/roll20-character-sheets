@@ -360,31 +360,6 @@ body {
     background-color: #ddd !important;
 }
 
-.tabmenu {
-    height: 50px !important;
-    position: absolute !important;
-    left: 0 !important;
-    right: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    top: 0 !important;
-}
-
-.tabmenu li {
-    height: 50px !important;
-    width: 16.667% !important;
-    text-align: center !important;
-    top: 0 !important;
-}
-
-.tabmenu li a {
-    padding: 0 !important;
-    margin: 0 !important;
-    line-height: 50px !important;
-    border: 0 !important;
-    width: 100% !important;
-}
-
 #rightsidebar .ui-tabs-panel {
     top: 70px !important;
 }
