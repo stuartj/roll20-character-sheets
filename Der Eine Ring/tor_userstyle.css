@@ -12,7 +12,7 @@ div.rollresult > div.formula ~ div.formula {
     display: block;
 }
 
-/* get Dumbledor font (maybe not loaded as 'unsafe' content in standard css) */
+/* get Dumbledor font (not loaded as 'unsafe' content in standard css) */
 
 @font-face {
     font-family: "dum2";
